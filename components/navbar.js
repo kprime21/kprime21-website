@@ -4,12 +4,17 @@ import Image from 'next/image';
 import picture from '../public/github-logo.gif'
 
 
-
 const Menu = styled.div`
+    background-color: black;
+    top:0;
     display:flex;
-    position:relative;
+    position:fixed;
     justify-content:space-around;
     align-items:center;
+    width:100%;
+    z-index:100;
+
+   
 
 
     
@@ -22,6 +27,7 @@ const TextBox = styled.div`
         border-radius:5px;
         display:flex;
         margin-top:1rem;
+        margin-bottom:1rem;
         padding: 1rem 1.5rem 1rem;
         div{
         color:#fff;
@@ -29,7 +35,7 @@ const TextBox = styled.div`
         font-size: 32px;
         font-weight: bold;
         padding: 0 2rem;
-        
+        cursor:pointer;
     }
 `;
 
