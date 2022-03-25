@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import "@fontsource/vt323";
 import Image from 'next/image';
-import picture from '../public/github-logo.gif'
+import picture from '../public/k.png'
 
 
 const Menu = styled.div`
@@ -13,15 +13,7 @@ const Menu = styled.div`
     align-items:center;
     width:100%;
     z-index:100;
-
-   
-
-
-    
-    
-    
 `;
-
 const TextBox = styled.div`
         border: 2px white solid;
         border-radius:5px;
@@ -32,13 +24,12 @@ const TextBox = styled.div`
         div{
         color:#fff;
         font-family: 'VT323', monospace;
-        font-size: 32px;
+        font-size: 22px;
         font-weight: bold;
         padding: 0 2rem;
         cursor:pointer;
     }
 `;
-
 const ImageHolder = styled.div`
     > span{
         max-width:64px;
@@ -51,9 +42,6 @@ const ImageHolder = styled.div`
     height:64px;
     
 `;
-
-
-
 const Navbar = () => {
     return (
         <Menu>
@@ -69,6 +57,5 @@ const Navbar = () => {
         </Menu>
     );
 }
-
 
 export default Navbar;
