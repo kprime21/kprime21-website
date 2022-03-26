@@ -45,7 +45,7 @@ margin-bottom:auto;
 
 h1{
     border: 3px solid white;
-    border-radius: 5px;
+    border-radius: 10px;
     font-family: 'VT323', monospace;
     font-weight:500;
     color:white;
