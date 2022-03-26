@@ -1,14 +1,8 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import {Container} from '../styles/Home'
-import picture from '../public/k.png';
 import styled from 'styled-components';
 import Layout from '../components/layout'
 
-const ImageHolder = styled.div`
-  width:32px;
-  height:32px;
-`;
 
 
 
