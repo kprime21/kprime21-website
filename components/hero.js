@@ -10,44 +10,53 @@ const HeroContainer = styled.div`
     width:80%;
     height:100%;
     position:relative;
-    background-image:url('/retro.gif');
-    background-size: 40%;
-    background-repeat: no-repeat;
-    background-position: 0% 0%;
-    
-    @media (max-width:640px){
-        background-image:none;
-    }
-    
-
+    display:flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    align-items:center;
 `;
 
-const HeroSection = styled.div`
- min-height:100%;
-
-`;
-
-const HeroText = styled.div`
-width:50%;
-min-width:400px;
+const HeroTextL = styled.div`
 padding: 2em 0;
-margin-left:45%;
 position:relative;
-
-
-h1{
+ 
+ h1{
     border: 3px solid white;
+    border-radius: 5px;
     font-family: 'VT323', monospace;
+    font-weight:500;
     color:white;
     font-size: 2em;
     margin: 0 auto 1rem auto;
     text-align:left;
-    width:50%;
-    border-radius: 5px;
-    font-weight:500;
     padding: 1rem 1rem;
     position:relative;
-    word-wrap:break-word;
+
+    width:45%;
+ }
+
+`;
+
+const HeroTextR = styled.div`
+padding: 2em 0;
+position:relative;
+margin-bottom:auto;
+
+
+h1{
+    border: 3px solid white;
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    font-weight:500;
+    color:white;
+    font-size: 2em;
+    margin: 0 auto 1rem auto;
+    text-align:left; 
+    padding: 1rem 1rem;
+    position:relative;
+
+    width:100%;
+    
     
 }
 `;
@@ -59,8 +68,23 @@ h1{
 const Hero = () => {
     return(
         <HeroContainer>
-           
-             <HeroText>
+           <HeroTextL>
+               <h1>
+                   yo!
+                   <p>
+                        I am a computer engineer
+
+                        I enjoy making web dev projects, game devleopment, and 
+                    </p>
+                    <p>
+                        I am a computer engineer
+
+                        I enjoy making web dev projects, game devleopment, and 
+                    </p>
+               </h1>
+                    
+            </HeroTextL>
+             <HeroTextR>
                  <h1>
                 Hi, my name is Kiren
                     <p>
@@ -69,21 +93,10 @@ const Hero = () => {
                         I enjoy making web dev projects, game devleopment, and 
                     </p>
 
-                    <HeroSection>
-                    <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
-                    <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
-                    </HeroSection>
+                    
                  </h1>
             
-             </HeroText>
+             </HeroTextR>
            
         </HeroContainer>
     )
