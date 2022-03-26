@@ -10,7 +10,7 @@ const HeroContainer = styled.div`
     width:80%;
     height:100%;
     position:relative;
-    background-image:url('/k.png');
+    background-image:url('/retro.gif');
     background-size: 40%;
     background-repeat: no-repeat;
     background-position: 0% 0%;
@@ -41,9 +41,10 @@ h1{
     font-weight:500;
     padding: 1rem 1rem;
     position:relative;
+    word-wrap:break-word;
     
 }
-h1::before{
+/* h1::before{
     content:"";
     position: absolute;
     top:10px;
@@ -58,7 +59,7 @@ h1::before{
     border-left:solid #000;
     transform:rotate(225deg);
     background-color: #000; 
-}
+} */
 `;
 
 
