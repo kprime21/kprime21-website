@@ -20,7 +20,7 @@ const ProjectList = styled.div`
 const ProjectCard = styled.div`
 
 border: 5px red solid;
-width:48%;
+width:50%;
 position:relative;
 margin: 1rem 0 2rem 0;
 margin-top:2em;
@@ -30,6 +30,9 @@ padding: 0 2rem;
 
 h1{
     color:white;  
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    font-weight: bold;
 }
 
 
@@ -37,6 +40,10 @@ h1{
   
   width: 100%;
   margin: 0.25rem;
+  h1{
+      font-size:16px;
+  }
+
 
 }
 
@@ -44,12 +51,17 @@ h1{
 
   margin: 0.25rem 0;
 
+  h1{
+      font-size:14px;
+  }
+
 }
 
 `;
 
 
 const ProjectImageHolder = styled.div`
+
 
 
 >span {
@@ -86,6 +98,15 @@ const Projects = () => {
             hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
             </h1>
             </ProjectCard>     
+            <ProjectCard>
+            <ProjectImageHolder>
+                <Image className='image' src={Game} layout='fill'/>
+            </ProjectImageHolder>
+            <h1>
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </h1>
+            </ProjectCard>     
+         
             
       
 

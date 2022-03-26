@@ -28,6 +28,10 @@ const TextBox = styled.div`
         font-weight: bold;
         padding: 0 2rem;
         cursor:pointer;
+
+        @media (max-width:640px){
+            padding:0 1rem;
+    }
     }
 `;
 const ImageHolder = styled.div`
