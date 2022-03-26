@@ -16,6 +16,7 @@ left:0;
 text-align: center;
 color:white;
 border: 5px solid white;
+border-radius:10px;
 
 p{
     color:white;
@@ -52,9 +53,7 @@ const Footer = () => {
                 </HoldImage>
                 <HoldImage>
                     <Image src={Prismic} ></Image>
-                </HoldImage>
-
-        
+                </HoldImage>        
             </IconHolder>
             <p>kprime21 2022</p>
         </Foot>
