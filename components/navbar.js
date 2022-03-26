@@ -40,6 +40,10 @@ const ImageHolder = styled.div`
     left:0;
     width:64px;
     height:64px;
+
+    @media (max-width:640px){
+        display:none;
+    }
     
 `;
 const Navbar = () => {

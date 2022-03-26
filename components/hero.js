@@ -15,6 +15,10 @@ const HeroContainer = styled.div`
     background-repeat: no-repeat;
     background-position: 0% 0%;
     
+    @media (max-width:640px){
+        background-image:none;
+    }
+    
 
 `;
 
@@ -25,9 +29,11 @@ const HeroSection = styled.div`
 
 const HeroText = styled.div`
 width:50%;
+min-width:400px;
 padding: 2em 0;
 margin-left:45%;
 position:relative;
+
 
 h1{
     border: 3px solid white;
@@ -44,6 +50,7 @@ h1{
     word-wrap:break-word;
     
 }
+
 /* h1::before{
     content:"";
     position: absolute;
