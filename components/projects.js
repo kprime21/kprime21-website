@@ -13,22 +13,33 @@ const ProjectList = styled.div`
     margin:auto;
     margin-top:6em;
 
-    @media only screen and (max-width: 1366px) {
-
-        width:100%;
-        margin: 0.25rem;
-  }
   
 
 `;
 
 
 const ProjectImageHolder = styled.div`
+width:48%;
 position:relative;
-margin: auto;
-max-width:600px;
+margin: 1rem 0 2rem 0;
 margin-top:2em;
 margin-bottom:2em;
+padding: 0 2rem;
+
+@media only screen and (max-width: 1366px) {
+  
+    width: 100%;
+    margin: 0.25rem;
+  
+}
+
+@media only screen and (max-width: 550px) {
+
+    margin: 0.25rem 0;
+ 
+}
+
+
 
 
 >span {
