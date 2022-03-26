@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Kirjan from '../public/kirjan.jpg';
+import Icon1 from '../public/k.png';
 import Image from 'next/image';
 
 // Outer container
@@ -26,6 +27,9 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center ;
+border: 5px solid yellow;
+
+
 
 `;
 
@@ -74,10 +78,22 @@ position:relative;
 
 
 //Right Container - Uses Column
-const HeroRight = styled.div``;
+const HeroRight = styled.div`
 
+min-width:400px;
+margin-right: 5rem;
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+
+border: 5px solid yellow;
+`;
+
+//Text container of right column
 const HeroTextR = styled.div`
-
+padding: 0 5em;
 position:relative;
 margin-bottom:auto;
 
@@ -103,9 +119,30 @@ h1{
 }
 `;
 
-const HeroIconPicture = styled.div``;
+//Image container of right column
+const HeroIconPicture = styled.div`
 
+    margin-top:3rem;
 
+    display:flex;
+    flex-direction:row ;
+    justify-content:center;
+    
+    
+
+    
+    border: 5px solid white;
+    border-radius: 5px;
+`;
+
+//Container for each seperate icon
+const HoldIcon = styled.div`
+    height:64px;
+    width:64px;
+    margin-left:1rem;
+    margin-right:1rem;
+    cursor:pointer;
+`;
 
 
 
@@ -125,7 +162,8 @@ const Hero = () => {
                         
                 </HeroTextL>
             </HeroLeft>
-             <HeroTextR>
+            <HeroRight>
+            <HeroTextR>
                  <h1>
                 I am a Computer Engineering Student and am an avid coder
                     
@@ -141,6 +179,24 @@ const Hero = () => {
                  
             
              </HeroTextR>
+             <HeroIconPicture>
+                 <HoldIcon>
+                     <Image src={Icon1}></Image>
+                 </HoldIcon>
+                 <HoldIcon>
+                     <Image src={Icon1}></Image>
+                 </HoldIcon>
+                 <HoldIcon>
+                     <Image src={Icon1}></Image>
+                 </HoldIcon>
+                 <HoldIcon>
+                     <Image src={Icon1}></Image>
+                 </HoldIcon>
+
+             </HeroIconPicture>
+                
+            </HeroRight>
+             
            
         </HeroContainer>
     )
