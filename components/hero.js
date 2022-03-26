@@ -50,23 +50,6 @@ h1{
     word-wrap:break-word;
     
 }
-
-/* h1::before{
-    content:"";
-    position: absolute;
-    top:10px;
-    left:-12px;
-    margin:auto;
-    height: 18px;
-    width: 18px;
-    
-    border-right: solid #fff;
-    border-top: solid#fff;
-    border-bottom:solid #000;
-    border-left:solid #000;
-    transform:rotate(225deg);
-    background-color: #000; 
-} */
 `;
 
 
