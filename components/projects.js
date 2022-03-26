@@ -13,6 +13,14 @@ const ProjectList = styled.div`
     margin:auto;
     margin-top:6em;
 
+    @media only screen and (max-width: 550px) {
+        width:100%;
+    }
+    @media only screen and (max-width: 550px) {
+        width:100%;
+    }
+
+
   
 
 `;
@@ -27,8 +35,19 @@ margin-top:2em;
 margin-bottom:2em;
 padding: 0 2rem;
 
+button{
+    background-color:green;
+    color: white;
+    display:inline-block;
+    font-size:16px;
+}
 
 h1{
+    color:white;
+    font-family: 'VT323', monospace;
+    
+}
+div{
     color:white;  
     font-family: 'VT323', monospace;
     font-size: 22px;
@@ -40,8 +59,8 @@ h1{
   
   width: 100%;
   margin: 0.25rem;
-  h1{
-      font-size:16px;
+  div{
+      font-size:20px;
   }
 
 
@@ -51,8 +70,8 @@ h1{
 
   margin: 0.25rem 0;
 
-  h1{
-      font-size:14px;
+  div{
+      font-size:16px;
   }
 
 }
@@ -87,24 +106,51 @@ const Projects = () => {
                 <Image className='image' src={Game} layout='fill'/>
             </ProjectImageHolder>
             <h1>
+                HELLO
+            </h1>
+            <div>
                 hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            </h1>
+                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </div>
+            <button>
+                OK
+            </button>
             </ProjectCard>     
             <ProjectCard>
             <ProjectImageHolder>
                 <Image className='image' src={Game} layout='fill'/>
             </ProjectImageHolder>
             <h1>
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                HELLO
             </h1>
+            <div>
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </div>
+            <button>
+                OK
+            </button>
             </ProjectCard>     
             <ProjectCard>
             <ProjectImageHolder>
                 <Image className='image' src={Game} layout='fill'/>
             </ProjectImageHolder>
             <h1>
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                HELLO
             </h1>
+            <div>
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </div>
+            <button>
+                OK
+            </button>
             </ProjectCard>     
          
             

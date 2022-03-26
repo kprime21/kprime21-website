@@ -10,15 +10,22 @@ const Foot = styled.div`
 position:absolute;
 width:50%;
 margin-left:25%;
-height:5rem;
 bottom:--1em;
 left:0;
+
+
+display:flex;
+flex-direction:column ;
+align-items:center;
+
+
 text-align: center;
 color:white;
-border: 5px solid white;
-border-radius:10px;
+border: 10px solid blue;
 
-p{
+
+div{
+    font-family: 'VT323', monospace;
     color:white;
 }
    
@@ -26,18 +33,21 @@ p{
 `;
 
 const IconHolder = styled.div`
+border:5px solid white;
+border-radius: 5px;
 display:flex;
-flex-direction:row ;
-justify-content:center;
+margin-bottom:5px;
+
 
 
 `;
 
 
 const HoldImage = styled.div`
-width:64px;
-height:64px;
-margin:auto;
+margin:0 0.5rem;
+width:32px;
+height:32px;
+
 
 
 `;
@@ -55,7 +65,15 @@ const Footer = () => {
                     <Image src={Prismic} ></Image>
                 </HoldImage>        
             </IconHolder>
-            <p>kprime21 2022</p>
+            <IconHolder>
+                <HoldImage>
+                    <Image src={Github} ></Image>
+                </HoldImage>
+                <HoldImage>
+                    <Image src={Prismic} ></Image>
+                </HoldImage>        
+            </IconHolder>
+            <div>kprime21 @2022</div>
         </Foot>
         
     );

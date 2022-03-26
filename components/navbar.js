@@ -13,6 +13,8 @@ const Menu = styled.div`
     align-items:center;
     width:100%;
     z-index:100;
+
+    border:5px solid green;
 `;
 const TextBox = styled.div`
         border: 2px white solid;
