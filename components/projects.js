@@ -17,8 +17,9 @@ const ProjectList = styled.div`
 
 `;
 
+const ProjectCard = styled.div`
 
-const ProjectImageHolder = styled.div`
+border: 5px red solid;
 width:48%;
 position:relative;
 margin: 1rem 0 2rem 0;
@@ -26,20 +27,29 @@ margin-top:2em;
 margin-bottom:2em;
 padding: 0 2rem;
 
+
+h1{
+    color:white;  
+}
+
+
 @media only screen and (max-width: 1366px) {
   
-    width: 100%;
-    margin: 0.25rem;
-  
+  width: 100%;
+  margin: 0.25rem;
+
 }
 
 @media only screen and (max-width: 550px) {
 
-    margin: 0.25rem 0;
- 
+  margin: 0.25rem 0;
+
 }
 
+`;
 
+
+const ProjectImageHolder = styled.div`
 
 
 >span {
@@ -60,33 +70,23 @@ const Projects = () => {
 
     return(
         <ProjectList>
+            <ProjectCard>
             <ProjectImageHolder>
                 <Image className='image' src={Game} layout='fill'/>
             </ProjectImageHolder>
+            <h1>
+                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </h1>
+            </ProjectCard>     
+            <ProjectCard>
             <ProjectImageHolder>
                 <Image className='image' src={Game} layout='fill'/>
             </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
-            </ProjectImageHolder>
+            <h1>
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+            </h1>
+            </ProjectCard>     
+            
       
 
         </ProjectList>
