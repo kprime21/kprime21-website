@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import Kirjan from '../public/kirjan.jpg';
 import Image from 'next/image';
 
-
+// Outer container
 const HeroContainer = styled.div`
     margin:auto;
     margin-top:15rem;
@@ -16,12 +16,28 @@ const HeroContainer = styled.div`
     align-items:flex-start;
 `;
 
-const HeroImagePicture = styled.div`
-border: 3px solid white;
-border-radius: 10px;
-width: 20%;
+//Left Container - Uses Column
+const HeroLeft = styled.div`
+width:20%;
 min-width:400px;
-margin-right:5rem;
+margin-right: 5rem;
+
+display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center ;
+
+`;
+
+//Top Container of Column
+const HeroImagePicture = styled.div`
+position:relative;
+border: 3px solid white;
+border-radius: 5px;
+width: 20%;
+min-width:300px;
+
+
 
 >span {
     position: unset !important;
@@ -34,17 +50,16 @@ margin-right:5rem;
     height: unset !important;
 }
 
-h1{
-    text-align: center ;
-    color:white;
-}
-`;
 
+`;
+//Bottom Container of Column
 const HeroTextL = styled.div`
-padding: 2em 0;
+padding: 2em 2em;
 position:relative;
- 
- /* h1{
+
+
+ h1{
+     
     border: 3px solid white;
     border-radius: 5px;
     font-family: 'VT323', monospace;
@@ -53,17 +68,20 @@ position:relative;
     font-size: 2em;
     margin: 0 auto 1rem auto;
     padding: 1rem 1rem;
-
-
-    width:45%;
- } */
+ }
 
 `;
+
+
+//Right Container - Uses Column
+const HeroRight = styled.div``;
 
 const HeroTextR = styled.div`
 
 position:relative;
 margin-bottom:auto;
+
+
 
 
 
@@ -85,6 +103,8 @@ h1{
 }
 `;
 
+const HeroIconPicture = styled.div``;
+
 
 
 
@@ -92,41 +112,33 @@ h1{
 const Hero = () => {
     return(
         <HeroContainer>
+            <HeroLeft>
             <HeroImagePicture>
-                <Image src={Kirjan} className='image' layout='fill'></Image>
-                <h1>Hi! I'm Kirjan</h1>
+                <Image className='image' src={Kirjan} layout="fill"/>
             </HeroImagePicture>
-           {/* <HeroTextL>
-               <h1>
-                   yo!
-                   <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
-                    <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
-               </h1>
-                    
-            </HeroTextL> */}
+           
+            <HeroTextL>
+                <h1>
+                    Hi! My name is Kirjan
+             
+                </h1>
+                        
+                </HeroTextL>
+            </HeroLeft>
              <HeroTextR>
                  <h1>
-                Hi, my name is Kiren
-                    <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
-                    <p>
-                        I am a computer engineer
-
-                        I enjoy making web dev projects, game devleopment, and 
-                    </p>
+                I am a Computer Engineering Student and am an avid coder
                     
+                <p>
+                I am experienced in C/C++/NextJS/Flask
+                </p>  
+                
+                
+                <p>
+                My interests are Game Development, ROM Hacking and Reverse Engineering retro games
+                </p>
                  </h1>
+                 
             
              </HeroTextR>
            
