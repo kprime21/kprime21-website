@@ -13,14 +13,7 @@ const ProjectList = styled.div`
     margin:auto;
     margin-top:6em;
 
-    @media only screen and (max-width: 550px) {
-        width:100%;
-    }
-    @media only screen and (max-width: 550px) {
-        width:100%;
-    }
-
-
+ 
   
 
 `;
@@ -55,10 +48,10 @@ div{
 }
 
 
-@media only screen and (max-width: 1366px) {
+@media only screen and (max-width: 1500px) {
   
   width: 100%;
-  margin: 0.25rem;
+
   div{
       font-size:20px;
   }
@@ -68,7 +61,7 @@ div{
 
 @media only screen and (max-width: 550px) {
 
-  margin: 0.25rem 0;
+    width: 100%;
 
   div{
       font-size:16px;
