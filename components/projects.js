@@ -73,6 +73,7 @@ div{
 
 
 const ProjectImageHolder = styled.div`
+position:relative;
 
 
 
