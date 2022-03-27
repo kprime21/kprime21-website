@@ -71,7 +71,7 @@ div{
 
 `;
 
-
+//images will have to be restricted to similar aspect ratio
 const ProjectImageHolder = styled.div`
 position:relative;
 
