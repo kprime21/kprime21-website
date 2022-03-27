@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Game from '../public/dungeoncrawler.png';
+import Tree from '../public/tree.png';
 
 
 const ProjectList = styled.div`
@@ -71,12 +72,12 @@ div{
 
 `;
 
-//images will have to be restricted to similar aspect ratio
+
 const ProjectImageHolder = styled.div`
 position:relative;
 
-
-
+/* 
+//If using wrapper then images will have to be the same aspect ratio, must use a pipe to resize
 >span {
     position: unset !important;
 }
@@ -86,7 +87,7 @@ position:relative;
     width: 100% !important;
     position: relative !important;
     height: unset !important;
-}
+} */
 
 `;
 
@@ -97,7 +98,7 @@ const Projects = () => {
         <ProjectList>
             <ProjectCard>
             <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
+                <Image className='image' src={Game} width='1920' height='1080'/>
             </ProjectImageHolder>
             <h1>
                 HELLO
@@ -114,7 +115,7 @@ const Projects = () => {
             </ProjectCard>     
             <ProjectCard>
             <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
+                <Image className='image' src={Tree} width='1920' height='1080'/>
             </ProjectImageHolder>
             <h1>
                 HELLO
@@ -131,7 +132,7 @@ const Projects = () => {
             </ProjectCard>     
             <ProjectCard>
             <ProjectImageHolder>
-                <Image className='image' src={Game} layout='fill'/>
+                <Image className='image' src={Game} width='1920' height='1080'/>
             </ProjectImageHolder>
             <h1>
                 HELLO
