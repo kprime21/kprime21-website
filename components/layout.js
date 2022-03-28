@@ -9,7 +9,7 @@ export default function Layout({ children }){
     return(
         <>
             <Navbar />
-            <Projects/>
+            <Hero/>
                 {/* <main>{children}</main> */}
             <Footer /> 
         </>
