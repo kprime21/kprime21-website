@@ -88,28 +88,31 @@ position:relative;
 `;
 
 
-const Projects = () => {
 
+const Projects = (props) => {
+    let {ProjectImage,ProjectTitle,ProjectContent,ProjectLink} = props.propss;
+   
+    
     return(
         <ProjectList>
             <ProjectCard>
             <ProjectImageHolder>
-                <Link href = '/blog/website'>
-                <Image className='image' src={Game} width='1920' height='1080'/>
-                </Link>
+                
+                <Image className='image' src={ProjectImage} width='1920' height='1080'/>
+                
             </ProjectImageHolder>
             <h1>
-                HELLO
+                {ProjectTitle}
             </h1>
             <div>
-                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-                hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+               {ProjectContent}
             </div>
-            <button>
-                OK
-            </button>
+                <Link href={ProjectLink}>
+                <button>
+                    OK
+                </button>
+                </Link>
+                
             </ProjectCard>     
             <ProjectCard>
             <ProjectImageHolder>
@@ -119,6 +122,7 @@ const Projects = () => {
                 HELLO
             </h1>
             <div>
+            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
             hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
             hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
             hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
