@@ -7,7 +7,7 @@ import picture from '../public/k.png'
 
 
 const Menu = styled.div`
-    background-color: black;
+    background-color: darkolivegreen;
     top:0;
     display:flex;
     position:fixed;

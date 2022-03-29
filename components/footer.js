@@ -8,8 +8,9 @@ import Prismic from '../public/prismic.svg';
 const Foot = styled.div`
 
 position:absolute;
-width:50%;
-margin-left:25%;
+background-color:navy;
+width:100%;
+margin:auto;
 bottom:--1em;
 left:0;
 
