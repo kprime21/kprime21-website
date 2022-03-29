@@ -1,7 +1,5 @@
 import Head from 'next/head'
 import {Container} from '../styles/Home'
-import styled from 'styled-components';
-import Layout from '../components/layout'
 import Hero from '../components/hero'
 
 

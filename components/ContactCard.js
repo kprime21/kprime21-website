@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 
 const ContactCard = styled.form`
-display:block;
+
 border: 5px white solid;
 border-radius: 5px;
 color:white;
