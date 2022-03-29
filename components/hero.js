@@ -7,7 +7,6 @@ import Image from 'next/image';
 const HeroContainer = styled.div`
     margin:auto;
     margin-top:15rem;
-    margin-bottom:15rem;
     width:80%;
     height:100%;
     position:relative;
