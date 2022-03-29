@@ -39,7 +39,7 @@ button{
 h1{
     color:white;
     font-family: 'VT323', monospace;
-    
+
 }
 div{
     color:white;  
@@ -47,8 +47,6 @@ div{
     font-size: 22px;
     font-weight: bold;
 }
-
-
 @media only screen and (max-width: 1500px) {
   
   width: 100%;
@@ -59,7 +57,6 @@ div{
 
 
 }
-
 @media only screen and (max-width: 550px) {
 
     width: 100%;
@@ -71,8 +68,6 @@ div{
 }
 
 `;
-
-
 const ProjectImageHolder = styled.div`
 position:relative;
 

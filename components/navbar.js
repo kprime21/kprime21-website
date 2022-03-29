@@ -1,7 +1,9 @@
 import styled from 'styled-components';
 import "@fontsource/vt323";
+import Link from 'next/link';
 import Image from 'next/image';
 import picture from '../public/k.png'
+
 
 
 const Menu = styled.div`
@@ -59,10 +61,18 @@ const Navbar = () => {
                 <Image src={picture}></Image>
             </ImageHolder>
             <TextBox>
+                <Link href='/'>
                 <div>Home</div>
+                </Link>
+                <Link href='/projects'>
                 <div>Projects</div>
+                </Link>
+                <Link href='/blog'>
                 <div>Blog</div>
+                </Link>
+                <Link href='/contact'>
                 <div>Contact</div>
+                </Link>
             </TextBox>
         </Menu>
     );
