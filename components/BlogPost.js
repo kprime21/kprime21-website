@@ -3,7 +3,7 @@ import Image from 'next/image';
 import Picture from '../public/tree.png';
 
 const SingleBlogPost = styled.div`
-width:80%;
+width:60%;
 margin:auto;
 margin-top:8rem;
 margin-bottom:5rem;
@@ -52,12 +52,31 @@ p{
 
 `;
 
+const ProjectlistImageHolder = styled.div`
+width: 100%;
 
+
+>span {
+    position: unset !important;
+   
+}
+
+.image {
+    object-fit: cover;
+    width: 100% !important;
+    position: relative !important;
+    height: unset !important;
+}
+
+`
 
 const BlogPost = () => {
     return (
         <SingleBlogPost>
-            <Image src={Picture} width='1920' height='1080' objectFit='cover' ></Image>
+            <ProjectlistImageHolder>
+                <Image className = 'image' src={Picture} layout='fill'  />
+            </ProjectlistImageHolder>
+            
             <BlogTitle>
                 <h1>First Blog Post</h1>
                 <h2>March 29 2022 | Kirjan</h2>
