@@ -4,16 +4,14 @@ import Picture from '../public/tree.png';
 
 const SingleBlogPost = styled.div`
 width:60%;
+
 margin:auto;
 margin-top:8rem;
 margin-bottom:5rem;
 position:relative;
 
-border: 5px white solid;
-border-radius:5px;
+border: turquoise 5px solid;
 
-color:white;
-background-color:blue ;
 
 `;
 
@@ -39,6 +37,15 @@ h2{
 
 `;
 
+const BlogText = styled.div`
+border: 5px white solid;
+border-radius:5px;
+
+color:white;
+background-color:blue ;
+`
+
+
 const Article = styled.div`
 position:relative;
 width:80%;
@@ -53,11 +60,14 @@ p{
 `;
 
 const ProjectlistImageHolder = styled.div`
-width: 100%;
+
+display:flex;
+
 
 
 >span {
     position: unset !important;
+    max-height: 400px;
    
 }
 
@@ -76,7 +86,7 @@ const BlogPost = () => {
             <ProjectlistImageHolder>
                 <Image className = 'image' src={Picture} layout='fill'  />
             </ProjectlistImageHolder>
-            
+            <BlogText>
             <BlogTitle>
                 <h1>First Blog Post</h1>
                 <h2>March 29 2022 | Kirjan</h2>
@@ -104,7 +114,7 @@ const BlogPost = () => {
 
                 </p>
             </Article>
-
+            </BlogText>
         </SingleBlogPost>
     );
 }
