@@ -11,7 +11,7 @@ position:absolute;
 background-color:navy;
 width:100%;
 margin:auto;
-bottom:--1em;
+bottom:0;
 left:0;
 
 

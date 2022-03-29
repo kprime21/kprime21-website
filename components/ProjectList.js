@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import Link from 'next/link'
 import Game from '../public/dungeoncrawler.png';
 import Tree from '../public/tree.png';
 
@@ -93,7 +94,9 @@ const Projects = () => {
         <ProjectList>
             <ProjectCard>
             <ProjectImageHolder>
+                <Link href = '/blog/website'>
                 <Image className='image' src={Game} width='1920' height='1080'/>
+                </Link>
             </ProjectImageHolder>
             <h1>
                 HELLO
