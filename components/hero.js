@@ -13,7 +13,7 @@ const HeroContainer = styled.div`
     display:flex;
     flex-direction:row;
     justify-content:space-evenly;
-    align-items:flex-start;
+    align-items:center;
     
     @media only screen and (max-width: 890px) {
     
@@ -21,6 +21,7 @@ const HeroContainer = styled.div`
     align-items:center ;
 
     flex-wrap: wrap;
+ 
 
 }
 
@@ -95,9 +96,9 @@ position:relative;
 //Right Container - Uses Column
 const HeroRight = styled.div`
 
-min-width:500px;
+min-width:600px;
 margin-right: 5rem;
-
+margin:auto;
 display:flex;
 flex-direction: column;
 justify-content: center;
@@ -105,7 +106,8 @@ align-items: center ;
 
 border: 5px solid yellow;
 @media only screen and (max-width: 890px) {
-    
+    /* for mobile decrease min width to center textbox */
+    min-width:400px;
     margin-right:0;
     margin-left:0;
 
@@ -123,6 +125,7 @@ margin-bottom:auto;
 
 
 h1{
+    
     border: 3px solid white;
     border-radius: 10px;
     font-family: 'VT323', monospace;
@@ -137,6 +140,11 @@ h1{
     width:100%;
     
     
+}
+@media only screen and (max-width: 890px) {
+    
+    padding: 0 2em;
+
 }
 `;
 
