@@ -2,6 +2,8 @@ import styled from 'styled-components';
 import Navbar from './navbar'
 import Footer from './footer'
 
+
+//Flex display is used so the footer will stay at the bottom
 const LayoutHolder = styled.div`
 display:flex;
 flex-direction:column;
@@ -10,15 +12,15 @@ padding: 0 0 10rem;
 position:relative;
 
 `;
-
-export default function Layout({ children }){
-    return(
+//The layout template that will be reused 
+export default function Layout({ children }) {
+    return (
         <>
-        <LayoutHolder>
-            <Navbar />
-            <main>{children}</main>
-            <Footer />
-        </LayoutHolder> 
+            <LayoutHolder>
+                <Navbar />
+                <main>{children}</main>
+                <Footer />
+            </LayoutHolder>
         </>
     )
 }

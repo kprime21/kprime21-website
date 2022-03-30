@@ -38,6 +38,9 @@ const TextBox = styled.div`
     }
     }
 `;
+// used to hold the image at the top left of the screen
+// NextJS image component is wrapped in a Span element and it's position is set to absolute so it can be displayed as whole on the top left of the screen
+// Read More : https://github.com/vercel/next.js/discussions/18739
 const ImageHolder = styled.div`
     > span{
         max-width:64px;
@@ -54,6 +57,7 @@ const ImageHolder = styled.div`
     }
     
 `;
+//The navbar that will stay fixed at the top of the screen
 const Navbar = () => {
     return (
         <Menu>
@@ -62,16 +66,16 @@ const Navbar = () => {
             </ImageHolder>
             <TextBox>
                 <Link href='/'>
-                <div>Home</div>
+                    <div>Home</div>
                 </Link>
                 <Link href='/projects'>
-                <div>Projects</div>
+                    <div>Projects</div>
                 </Link>
                 <Link href='/blog'>
-                <div>Blog</div>
+                    <div>Blog</div>
                 </Link>
                 <Link href='/contact'>
-                <div>Contact</div>
+                    <div>Contact</div>
                 </Link>
             </TextBox>
         </Menu>

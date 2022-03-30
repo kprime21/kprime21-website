@@ -163,59 +163,59 @@ const HoldIcon = styled.div`
 `;
 
 
-
+//Home page where my picture and some about me text is
 const Hero = () => {
-    return(
+    return (
         <HeroContainer>
             <HeroLeft>
-            <HeroImagePicture>
-                <Image className='image' src={Kirjan} layout="fill"/>
-            </HeroImagePicture>
-           
-            <HeroTextL>
-                <h1>
-                    Hi! My name is Kirjan
-             
-                </h1>
-                        
+                <HeroImagePicture>
+                    <Image className='image' src={Kirjan} layout="fill" />
+                </HeroImagePicture>
+
+                <HeroTextL>
+                    <h1>
+                        Hi! My name is Kirjan
+
+                    </h1>
+
                 </HeroTextL>
             </HeroLeft>
             <HeroRight>
-            <HeroTextR>
-                 <h1>
-                I am a Computer Engineering Student and am an avid coder
-                    
-                <p>
-                I am experienced in C/C++/NextJS/Flask
-                </p>  
-                
-                
-                <p>
-                My interests are Game Development, ROM Hacking and Reverse Engineering retro games
-                </p>
-                 </h1>
-                 
-            
-             </HeroTextR>
-             <HeroIconPicture>
-                 <HoldIcon>
-                     <Image src={Icon1}></Image>
-                 </HoldIcon>
-                 <HoldIcon>
-                     <Image src={Icon1}></Image>
-                 </HoldIcon>
-                 <HoldIcon>
-                     <Image src={Icon1}></Image>
-                 </HoldIcon>
-                 <HoldIcon>
-                     <Image src={Icon1}></Image>
-                 </HoldIcon>
+                <HeroTextR>
+                    <h1>
+                        I am a Computer Engineering Student and am an avid coder
 
-             </HeroIconPicture>
-                
+                        <p>
+                            I am experienced in C/C++/NextJS/Flask
+                        </p>
+
+
+                        <p>
+                            My interests are Game Development, ROM Hacking and Reverse Engineering retro games
+                        </p>
+                    </h1>
+
+
+                </HeroTextR>
+                <HeroIconPicture>
+                    <HoldIcon>
+                        <Image src={Icon1}></Image>
+                    </HoldIcon>
+                    <HoldIcon>
+                        <Image src={Icon1}></Image>
+                    </HoldIcon>
+                    <HoldIcon>
+                        <Image src={Icon1}></Image>
+                    </HoldIcon>
+                    <HoldIcon>
+                        <Image src={Icon1}></Image>
+                    </HoldIcon>
+
+                </HeroIconPicture>
+
             </HeroRight>
-             
-           
+
+
         </HeroContainer>
     )
 }

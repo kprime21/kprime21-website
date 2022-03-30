@@ -5,6 +5,7 @@ import Game from '../public/dungeoncrawler.png';
 import Tree from '../public/tree.png';
 
 
+//Holds projects
 const ProjectList = styled.div`
     display:flex;
     justify-content:space-between;
@@ -14,12 +15,13 @@ const ProjectList = styled.div`
     max-width: 90em;
     margin:auto;
     margin-top:6em;
-
- 
-  
-
 `;
 
+//Each project is in a small box 
+//Image
+//Project Title
+//Project Description
+//Button to go to Project Page
 const ProjectCard = styled.div`
 
 border: 5px red solid;
@@ -88,70 +90,70 @@ position:relative;
 `;
 
 
-
+//Will display the projects that I am currently working on
 const Projects = (props) => {
-    let {ProjectImage,ProjectTitle,ProjectContent,ProjectLink} = props.propss;
-   
-    
-    return(
+    let { ProjectImage, ProjectTitle, ProjectContent, ProjectLink } = props.propss;
+
+
+    return (
         <ProjectList>
             <ProjectCard>
-            <ProjectImageHolder>
-                
-                <Image className='image' src={ProjectImage} width='1920' height='1080'/>
-                
-            </ProjectImageHolder>
-            <h1>
-                {ProjectTitle}
-            </h1>
-            <div>
-               {ProjectContent}
-            </div>
+                <ProjectImageHolder>
+
+                    <Image className='image' src={ProjectImage} width='1920' height='1080' />
+
+                </ProjectImageHolder>
+                <h1>
+                    {ProjectTitle}
+                </h1>
+                <div>
+                    {ProjectContent}
+                </div>
                 <Link href={ProjectLink}>
+                    <button>
+                        OK
+                    </button>
+                </Link>
+
+            </ProjectCard>
+            <ProjectCard>
+                <ProjectImageHolder>
+                    <Image className='image' src={Tree} width='1920' height='1080' />
+                </ProjectImageHolder>
+                <h1>
+                    HELLO
+                </h1>
+                <div>
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                </div>
                 <button>
                     OK
                 </button>
-                </Link>
-                
-            </ProjectCard>     
+            </ProjectCard>
             <ProjectCard>
-            <ProjectImageHolder>
-                <Image className='image' src={Tree} width='1920' height='1080'/>
-            </ProjectImageHolder>
-            <h1>
-                HELLO
-            </h1>
-            <div>
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            </div>
-            <button>
-                OK
-            </button>
-            </ProjectCard>     
-            <ProjectCard>
-            <ProjectImageHolder>
-                <Image className='image' src={Game} width='1920' height='1080'/>
-            </ProjectImageHolder>
-            <h1>
-                HELLO
-            </h1>
-            <div>
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
-            </div>
-            <button>
-                OK
-            </button>
-            </ProjectCard>     
-         
-            
-      
+                <ProjectImageHolder>
+                    <Image className='image' src={Game} width='1920' height='1080' />
+                </ProjectImageHolder>
+                <h1>
+                    HELLO
+                </h1>
+                <div>
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                    hi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doinghi how ar eoyu doing
+                </div>
+                <button>
+                    OK
+                </button>
+            </ProjectCard>
+
+
+
 
         </ProjectList>
     );

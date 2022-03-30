@@ -41,25 +41,25 @@ textarea{
 }
 `
 
-
+//Form to contact me
 const Contact = () => {
-    return(
-        
-        <ContactCard  id="contact-form" action="https://formsubmit.co/b7613c49f488d606ef83429e229df12a" method="POST" >
-        
-            
-                <label>Name</label>
-                <input type="text" className = 'input-field' name="name"/>
-                <label>Subject</label>
-                <input type="text"  className = 'input-field' name="subject"/>
-                <label>Email</label>
-                <input type="email" className = 'input-field' name="email"/>
-                <label>Message</label>
-                <textarea  className = 'input-field' name="message"></textarea>
-                <input id="submit-button" type="submit" value="Send"/>
-            
+    return (
+
+        <ContactCard id="contact-form" action="https://formsubmit.co/b7613c49f488d606ef83429e229df12a" method="POST" >
+
+
+            <label>Name</label>
+            <input type="text" className='input-field' name="name" />
+            <label>Subject</label>
+            <input type="text" className='input-field' name="subject" />
+            <label>Email</label>
+            <input type="email" className='input-field' name="email" />
+            <label>Message</label>
+            <textarea className='input-field' name="message"></textarea>
+            <input id="submit-button" type="submit" value="Send" />
+
         </ContactCard>
-        
+
     );
 
 };

@@ -6,8 +6,7 @@ import Prismic from '../public/prismic.svg';
 
 
 const Foot = styled.div`
-
-
+//must have parent div in a flex box in order to stay at the bottom for pages that are longer than the page width (scrollbar)
 
 position:absolute;
 background-color:navy;
@@ -55,10 +54,10 @@ height:32px;
 
 `;
 
-
+//Footer
 const Footer = () => {
 
-    return(
+    return (
         <Foot>
             <IconHolder>
                 <HoldImage>
@@ -66,7 +65,7 @@ const Footer = () => {
                 </HoldImage>
                 <HoldImage>
                     <Image src={Prismic} ></Image>
-                </HoldImage>        
+                </HoldImage>
             </IconHolder>
             <IconHolder>
                 <HoldImage>
@@ -74,11 +73,11 @@ const Footer = () => {
                 </HoldImage>
                 <HoldImage>
                     <Image src={Prismic} ></Image>
-                </HoldImage>        
+                </HoldImage>
             </IconHolder>
             <div>kprime21 @2022</div>
         </Foot>
-        
+
     );
 }
 
