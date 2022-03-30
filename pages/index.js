@@ -1,8 +1,16 @@
 import Head from 'next/head'
 import { Container } from '../styles/Home'
 import Hero from '../components/hero'
+import styled from 'styled-components'
 
+const Test  = styled.div`
 
+h1{
+color:white;
+}
+margin:auto;
+text-align:center;
+`;
 
 
 

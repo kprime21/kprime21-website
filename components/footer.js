@@ -47,8 +47,8 @@ margin-bottom:5px;
 
 const HoldImage = styled.div`
 margin:0 0.5rem;
-width:32px;
-height:32px;
+width:24px;
+height:24px;
 
 
 

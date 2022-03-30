@@ -1,0 +1,192 @@
+import styled from 'styled-components';
+import Image from 'next/image';
+import Link from 'next/link'
+
+
+//Holds projects
+const PostList = styled.div`
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    border: 5px solid yellow;
+    width:75%;
+    max-width: 90em;
+    margin:auto;
+    margin-top:6em;
+
+    @media only screen and (max-width: 550px) { //phone screens the Post cards will now appear larger
+
+width: 100%;
+
+
+}
+`;
+
+//Each Post is in a small box 
+//Image
+//Post Title
+//Post Description
+//Button to go to Post Page
+const PostCard = styled.div`
+border: 5px red solid;
+width:50%;
+position:relative;
+margin: 1rem 0 2rem 0;
+margin-top:2em;
+margin-bottom:2em;
+padding:  2rem;
+
+button{
+    background-color:green;
+    color: white;
+    display:inline-block;
+    font-size:16px;
+}
+
+h1{
+    color:white;
+    font-family: 'VT323', monospace;
+
+}
+div{
+    color:white;  
+    font-family: 'VT323', monospace;
+    font-size: 22px;
+    font-weight: bold;
+}
+@media only screen and (max-width: 1500px) {
+  
+  width: 100%;
+
+  div{
+      font-size:20px;
+  }
+
+
+}
+@media only screen and (max-width: 550px) {
+
+    width: 100%;
+
+  div{
+      font-size:16px;
+  }
+
+}
+
+`;
+
+const ButtonLink = styled.button`
+position:absolute;
+bottom:0;
+`;
+
+const PostImageHolder = styled.div`
+position:relative;
+`;
+
+const ProjectTags = styled.div`
+position:relative;
+border: purple solid 5px;
+div{
+    color:white;
+    font-family: 'VT323', monospace;
+}
+`;
+
+
+//Will display the Posts that I am currently working on
+const Posts = (props) => {
+    let { post, type } = props;
+
+    console.log(post)
+
+
+
+    return (
+        <PostList>
+
+            {(type == 'project') ?
+                post.map(info => {
+                    return (
+
+                        <PostCard key={info.uid} >
+                            <PostImageHolder>
+
+                                <Image className='image' src={info.data.ProjectImage.url} width='1920' height='1080' />
+
+                            </PostImageHolder>
+                            <h1>
+                                {info.data.ProjectTitle}
+                            </h1>
+                            <ProjectTags>
+                                <div>
+                                    {info.data.ProjectTags[0].text}
+                                </div>
+                            </ProjectTags>
+                            <div>
+                                {info.data.ProjectInfo[0].text}
+                            </div>
+                            <a href={info.data.ProjectLink} target='_blank'>
+                                <ButtonLink>
+                                    OK
+                                </ButtonLink>
+                            </a>
+                        </PostCard>
+                    )
+                })
+
+                :
+
+                post.map(info => {
+                    return (
+                        <PostCard key={info.uid}>
+                            <PostImageHolder>
+
+                                <Image className='image' src={post.BlogImage} width='1920' height='1080' />
+
+                            </PostImageHolder>
+                            <h1>
+                                {post.BlogTitle}
+                            </h1>
+                            <div>
+                                {post.BlogContent}
+                            </div>
+                            <Link href={post.BlogLink}>
+                                <ButtonLink>
+                                    OK
+                                </ButtonLink>
+                            </Link>
+                        </PostCard>
+                    )
+                })}
+            {/* <PostImageHolder>
+
+                    <Image className='image' src={PostImage} width='1920' height='1080' />
+
+                </PostImageHolder>
+                <h1>
+                    {PostTitle}
+                </h1>
+                <ProjectTags>
+                    <div>
+                        AAAAAAAAAAAAAAAAAAAAAAAAA
+                    </div>
+                </ProjectTags>
+                <div>
+                    {PostContent}
+                </div>
+                <Link href={PostLink}>
+                    <ButtonLink>
+                        OK
+                    </ButtonLink>
+                </Link> */}
+
+
+
+        </PostList>
+    );
+};
+
+
+export default Posts;

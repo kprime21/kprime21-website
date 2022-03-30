@@ -1,0 +1,57 @@
+{
+  "id": "projectpost",
+  "label": "ProjectPost",
+  "repeatable": true,
+  "status": true,
+  "json": {
+    "Main": {
+      "ProjectImage": {
+        "config": {
+          "label": "Project Image",
+          "constraint": {},
+          "thumbnails": []
+        },
+        "type": "Image"
+      },
+      "ProjectTitle": {
+        "config": {
+          "label": "Project Title",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "ProjectTags": {
+        "config": {
+          "label": "Project Tags",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "ProjectInfo": {
+        "config": {
+          "label": "Project Info",
+          "placeholder": "",
+          "allowTargetBlank": true,
+          "single": "paragraph,preformatted,heading1,heading2,heading3,heading4,heading5,heading6,strong,em,hyperlink,image,embed,list-item,o-list-item,rtl"
+        },
+        "type": "StructuredText"
+      },
+      "ProjectLink": {
+        "config": {
+          "label": "Project Link",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "uid": {
+        "config": {
+          "label": "Uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      }
+    }
+  }
+}

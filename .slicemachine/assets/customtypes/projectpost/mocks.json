@@ -1,0 +1,32 @@
+{
+  "id": "2912ef96-caf3-4224-8d22-0b8aa27f37b2",
+  "uid": "cumque-ullam-impedit",
+  "type": "projectpost",
+  "data": {
+    "ProjectImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1471897488648-5eae4ac6686b?w=900&h=500&fit=crop"
+    },
+    "ProjectTitle": "redefine open-source platforms",
+    "ProjectTags": [
+      {
+        "type": "paragraph",
+        "text": "Exercitation anim dolore sunt labore elit aliqua nostrud adipisicing ad voluptate labore eiusmod. Mollit consectetur mollit elit nostrud eiusmod eu duis sunt anim do id labore proident. Ut non sunt id veniam incididunt consequat culpa anim veniam.",
+        "spans": []
+      }
+    ],
+    "ProjectInfo": [
+      {
+        "type": "paragraph",
+        "text": "Velit aute officia aliqua ipsum. Excepteur voluptate et quis irure elit adipisicing. Ea consequat quis et excepteur sunt ex adipisicing.",
+        "spans": []
+      }
+    ],
+    "ProjectLink": "monetize sticky eyeballs"
+  }
+}

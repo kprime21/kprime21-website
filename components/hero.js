@@ -6,7 +6,7 @@ import Image from 'next/image';
 // Outer container
 const HeroContainer = styled.div`
     margin:auto;
-    margin-top:15rem;
+    margin-top:10rem;
     width:80%;
     height:100%;
     position:relative;
@@ -94,7 +94,7 @@ position:relative;
 //Right Container - Uses Column
 const HeroRight = styled.div`
 
-min-width:400px;
+min-width:500px;
 margin-right: 5rem;
 
 display:flex;
