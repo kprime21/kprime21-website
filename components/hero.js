@@ -14,6 +14,16 @@ const HeroContainer = styled.div`
     flex-direction:row;
     justify-content:space-evenly;
     align-items:flex-start;
+    
+    @media only screen and (max-width: 890px) {
+    
+    justify-content:center ;
+    align-items:center ;
+
+    flex-wrap: wrap;
+
+}
+
 `;
 
 //Left Container - Uses Column
@@ -28,6 +38,11 @@ justify-content: center;
 align-items: center ;
 border: 5px solid yellow;
 
+@media only screen and (max-width: 890px) {
+    
+    margin-right:0;
+
+}
 
 
 `;
@@ -88,6 +103,10 @@ justify-content: center;
 align-items: center ;
 
 border: 5px solid yellow;
+@media only screen and (max-width: 890px) {
+    
+    margin-right:0;
+}
 `;
 
 //Text container of right column
