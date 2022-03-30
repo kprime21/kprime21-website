@@ -144,7 +144,6 @@ const Posts = (props) => {
                 :
 
                 post.map(info => {
-                    console.log(info)
                     return (
                         <PostCard key={info.uid}>
                             <PostImageHolder>
