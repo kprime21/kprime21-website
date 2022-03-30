@@ -15,6 +15,13 @@ const ProjectList = styled.div`
     max-width: 90em;
     margin:auto;
     margin-top:6em;
+
+    @media only screen and (max-width: 550px) { //phone screens the project cards will now appear larger
+
+width: 100%;
+
+
+}
 `;
 
 //Each project is in a small box 
