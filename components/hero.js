@@ -41,6 +41,7 @@ border: 5px solid yellow;
 @media only screen and (max-width: 890px) {
     
     margin-right:0;
+    margin-left:0;
 
 }
 
@@ -106,6 +107,8 @@ border: 5px solid yellow;
 @media only screen and (max-width: 890px) {
     
     margin-right:0;
+    margin-left:0;
+
 }
 `;
 
