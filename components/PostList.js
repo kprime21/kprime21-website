@@ -44,6 +44,7 @@ button{
 }
 
 h1{
+    text-align:center ;
     color:white;
     font-family: 'VT323', monospace;
 
@@ -77,6 +78,11 @@ div{
 `;
 
 const ButtonLink = styled.button`
+left: 50%;
+/* use to center button perfectly */
+ -webkit-transform: translateX(-50%);
+ -moz-transform: translateX(-50%);
+ transform: translateX(-50%);
 position:absolute;
 bottom:0;
 `;
@@ -89,6 +95,7 @@ const ProjectTags = styled.div`
 position:relative;
 border: purple solid 5px;
 div{
+    text-align:center ;
     color:white;
     font-family: 'VT323', monospace;
 }
@@ -98,8 +105,6 @@ div{
 //Will display the Posts that I am currently working on
 const Posts = (props) => {
     let { post, type } = props;
-
-    console.log(post)
 
 
 
