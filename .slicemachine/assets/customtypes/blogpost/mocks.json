@@ -1,0 +1,32 @@
+{
+  "id": "bda016cc-aa8e-4f19-b382-ae009ffdd7dc",
+  "uid": "quia-id-nihil",
+  "type": "blogpost",
+  "data": {
+    "BlogImage": {
+      "dimensions": {
+        "width": 900,
+        "height": 500
+      },
+      "alt": "Placeholder image",
+      "copyright": null,
+      "url": "https://images.unsplash.com/photo-1448932223592-d1fc686e76ea?w=900&h=500&fit=crop"
+    },
+    "BlogTitle": "facilitate 24/7 portals",
+    "BlogDate": "2013-09-05",
+    "BlogPreview": [
+      {
+        "type": "paragraph",
+        "text": "Enim dolor nulla commodo quis cupidatat do nulla in id elit et cillum irure deserunt. Sint esse et officia Lorem amet nisi. Ipsum nisi amet non nostrud laborum qui eu labore ex quis.",
+        "spans": []
+      }
+    ],
+    "BlogContent": [
+      {
+        "type": "paragraph",
+        "text": "Ea ut dolore reprehenderit excepteur officia veniam eu. Ea eu tempor ad est voluptate fugiat id magna laborum minim et.",
+        "spans": []
+      }
+    ]
+  }
+}

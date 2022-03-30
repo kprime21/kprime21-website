@@ -1,5 +1,13 @@
 {
   "_cts": {
-    "projectpost": {}
+    "projectpost": {},
+    "blogpost": {
+      "BlogPreview": {
+        "config": {
+          "patternType": "PARAGRAPH",
+          "blocks": 1
+        }
+      }
+    }
   }
 }

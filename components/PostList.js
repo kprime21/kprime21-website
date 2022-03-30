@@ -144,20 +144,21 @@ const Posts = (props) => {
                 :
 
                 post.map(info => {
+                    console.log(info)
                     return (
                         <PostCard key={info.uid}>
                             <PostImageHolder>
 
-                                <Image className='image' src={post.BlogImage} width='1920' height='1080' />
+                                <Image className='image' src={info.data.BlogImage.url} width='1920' height='1080' />
 
                             </PostImageHolder>
                             <h1>
-                                {post.BlogTitle}
+                                {info.data.BlogTitle+ ' | ' + info.data.BlogDate}
                             </h1>
                             <div>
-                                {post.BlogContent}
+                                {info.data.BlogPreview[0].text}
                             </div>
-                            <Link href={post.BlogLink}>
+                            <Link href={`/blog/${info.uid}`}>
                                 <ButtonLink>
                                     OK
                                 </ButtonLink>
@@ -165,30 +166,7 @@ const Posts = (props) => {
                         </PostCard>
                     )
                 })}
-            {/* <PostImageHolder>
-
-                    <Image className='image' src={PostImage} width='1920' height='1080' />
-
-                </PostImageHolder>
-                <h1>
-                    {PostTitle}
-                </h1>
-                <ProjectTags>
-                    <div>
-                        AAAAAAAAAAAAAAAAAAAAAAAAA
-                    </div>
-                </ProjectTags>
-                <div>
-                    {PostContent}
-                </div>
-                <Link href={PostLink}>
-                    <ButtonLink>
-                        OK
-                    </ButtonLink>
-                </Link> */}
-
-
-
+    
         </PostList>
     );
 };
