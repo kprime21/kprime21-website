@@ -31,7 +31,7 @@ const HeroLeft = styled.div`
 width:20%;
 min-width:400px;
 margin-right: 5rem;
-
+margin:auto;
 display:flex;
 flex-direction: column;
 justify-content: center;
