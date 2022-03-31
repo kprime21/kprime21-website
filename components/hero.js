@@ -180,7 +180,7 @@ const Hero = () => {
         <HeroContainer>
             <HeroLeft>
                 <HeroImagePicture>
-                    <Image className='image' src={Kirjan} layout="fill" />
+                    <Image className='image' src={Kirjan} layout="fill" alt='MyPicture'/>
                 </HeroImagePicture>
 
                 <HeroTextL>
@@ -210,16 +210,16 @@ const Hero = () => {
                 </HeroTextR>
                 <HeroIconPicture>
                     <HoldIcon>
-                        <Image src={Icon1}></Image>
+                        <Image src={Icon1} alt='icon1'></Image>
                     </HoldIcon>
                     <HoldIcon>
-                        <Image src={Icon1}></Image>
+                        <Image src={Icon1} alt='icon2'></Image>
                     </HoldIcon>
                     <HoldIcon>
-                        <Image src={Icon1}></Image>
+                        <Image src={Icon1} alt='icon3'></Image>
                     </HoldIcon>
                     <HoldIcon>
-                        <Image src={Icon1}></Image>
+                        <Image src={Icon1} alt='icon4'></Image>
                     </HoldIcon>
 
                 </HeroIconPicture>

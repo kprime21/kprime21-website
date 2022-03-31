@@ -71,16 +71,16 @@ const Navbar = () => {
             </ImageHolder>
             </Link>
             <TextBox>
-                <Link href='/'>
+                <Link href='/' passHref>
                     <div>Home</div>
                 </Link>
-                <Link href='/projects'>
+                <Link href='/projects' passHref>
                     <div>Projects</div>
                 </Link>
-                <Link href='/blog'>
+                <Link href='/blog' passHref>
                     <div>Blog</div>
                 </Link>
-                <Link href='/contact'>
+                <Link href='/contact' passHref>
                     <div>Contact</div>
                 </Link>
             </TextBox>

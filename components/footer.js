@@ -60,24 +60,24 @@ const Footer = () => {
     return (
         <Foot>
             <IconHolder>
-                <a href = 'https://github.com/kprime21' target = '_blank'>
+                <a href = 'https://github.com/kprime21' target = '_blank' rel="noreferrer">
                 <HoldImage>
-                    <Image src={Github} ></Image>
+                    <Image src={Github} alt='GithubLogo'></Image>
                 </HoldImage>
                 </a>
-                <a href = 'https://github.com/kprime21' target = '_blank'>
+                <a href = 'https://github.com/kprime21' target = '_blank rel="noreferrer"'>
                 <HoldImage>
-                    <Image src={Github} ></Image>
+                    <Image src={Github} alt='GithubLogo'></Image>
                 </HoldImage>
                 </a>
-                <a href = 'https://github.com/kprime21' target = '_blank'>
+                <a href = 'https://github.com/kprime21' target = '_blank' rel="noreferrer">
                 <HoldImage>
-                    <Image src={Github} ></Image>
+                    <Image src={Github} alt='GithubLogo'></Image>
                 </HoldImage>
                 </a>
-                <a href = 'https://github.com/kprime21' target = '_blank'>
+                <a href = 'https://github.com/kprime21' target = '_blank' rel="noreferrer">
                 <HoldImage>
-                    <Image src={Github} ></Image>
+                    <Image src={Github} alt='GithubLogo'></Image>
                 </HoldImage>
                 </a>
             </IconHolder>

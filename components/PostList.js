@@ -113,12 +113,13 @@ const Posts = (props) => {
 
             {(type == 'project') ?
                 post.map(info => {
+                    console.log(info)
                     return (
 
                         <PostCard key={info.uid} >
                             <PostImageHolder>
 
-                                <Image className='image' src={info.data.ProjectImage.url} width='1920' height='1080' />
+                                <Image className='image' alt={info.data.ProjectImage.alt} src={info.data.ProjectImage.url} width='1920' height='1080' />
 
                             </PostImageHolder>
                             <h1>
@@ -132,7 +133,7 @@ const Posts = (props) => {
                             <div>
                                 {info.data.ProjectInfo[0].text}
                             </div>
-                            <a href={info.data.ProjectLink} target='_blank'>
+                            <a href={info.data.ProjectLink} target='_blank' rel="noreferrer">
                                 <ButtonLink>
                                     OK
                                 </ButtonLink>

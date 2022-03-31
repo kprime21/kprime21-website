@@ -89,7 +89,7 @@ const BlogPost = (props) => {
         <SingleBlogPost key = {article.uid}>
 
             <ProjectlistImageHolder>
-                <Image className='image' src={article.data.BlogImage.url} layout='fill' />
+                <Image className='image' alt = {article.data.BlogImage.alt} src={article.data.BlogImage.url} layout='fill' />
             </ProjectlistImageHolder>
             <BlogText>
                 <BlogTitle>
