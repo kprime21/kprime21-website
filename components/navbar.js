@@ -42,6 +42,10 @@ const TextBox = styled.div`
 // NextJS image component is wrapped in a Span element and it's position is set to absolute so it can be displayed as whole on the top left of the screen
 // Read More : https://github.com/vercel/next.js/discussions/18739
 const ImageHolder = styled.div`
+    :hover{
+        transform:scale(1.04);
+        cursor:pointer;
+    }
     > span{
         max-width:64px;
         max-height:64px;
@@ -61,9 +65,11 @@ const ImageHolder = styled.div`
 const Navbar = () => {
     return (
         <Menu>
+            <Link href='/'>
             <ImageHolder>
                 <Image src={picture}></Image>
             </ImageHolder>
+            </Link>
             <TextBox>
                 <Link href='/'>
                     <div>Home</div>

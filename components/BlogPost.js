@@ -85,7 +85,6 @@ display:flex;
 //Holds blogpost that will be on a static page [slug]
 const BlogPost = (props) => {
     let {article} = props
-    console.log(article)
     return (
         <SingleBlogPost key = {article.uid}>
 

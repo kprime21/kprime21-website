@@ -47,8 +47,8 @@ margin-bottom:5px;
 
 const HoldImage = styled.div`
 margin:0 0.5rem;
-width:24px;
-height:24px;
+width:32px;
+height:32px;
 
 
 
@@ -60,21 +60,28 @@ const Footer = () => {
     return (
         <Foot>
             <IconHolder>
+                <a href = 'https://github.com/kprime21' target = '_blank'>
                 <HoldImage>
                     <Image src={Github} ></Image>
                 </HoldImage>
-                <HoldImage>
-                    <Image src={Prismic} ></Image>
-                </HoldImage>
-            </IconHolder>
-            <IconHolder>
+                </a>
+                <a href = 'https://github.com/kprime21' target = '_blank'>
                 <HoldImage>
                     <Image src={Github} ></Image>
                 </HoldImage>
+                </a>
+                <a href = 'https://github.com/kprime21' target = '_blank'>
                 <HoldImage>
-                    <Image src={Prismic} ></Image>
+                    <Image src={Github} ></Image>
                 </HoldImage>
+                </a>
+                <a href = 'https://github.com/kprime21' target = '_blank'>
+                <HoldImage>
+                    <Image src={Github} ></Image>
+                </HoldImage>
+                </a>
             </IconHolder>
+            
             <div>kprime21 @2022</div>
         </Foot>
 
