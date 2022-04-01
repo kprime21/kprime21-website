@@ -5,10 +5,11 @@ import Link from 'next/link'
 
 //Holds projects
 const PostList = styled.div`
+    /* border: 5px solid yellow; */
+
     display:flex;
     justify-content:space-between;
     flex-wrap: wrap;
-    border: 5px solid yellow;
     width:75%;
     max-width: 90em;
     margin:auto;
@@ -28,7 +29,9 @@ width: 100%;
 //Post Description
 //Button to go to Post Page
 const PostCard = styled.div`
-border: 5px red solid;
+border: 3px white solid; 
+border-radius:5px;
+
 width:50%;
 position:relative;
 margin: 1rem 0 2rem 0;
@@ -113,7 +116,7 @@ const Posts = (props) => {
 
             {(type == 'project') ?
                 post.map(info => {
-                    console.log(info)
+                    // console.log(info)
                     return (
 
                         <PostCard key={info.uid} >

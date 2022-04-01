@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Image from 'next/image';
-import Picture from '../public/tree.png';
+
 
 //Set the area for the blogpost to be 60% of the screen and centered
 //Image

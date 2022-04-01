@@ -29,6 +29,8 @@ const HeroContainer = styled.div`
 
 //Left Container - Uses Column
 const HeroLeft = styled.div`
+/* border: 5px solid yellow; */
+
 width:20%;
 min-width:400px;
 margin-right: 5rem;
@@ -37,7 +39,7 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center ;
-border: 5px solid yellow;
+
 
 @media only screen and (max-width: 890px) {
     
@@ -95,6 +97,7 @@ position:relative;
 
 //Right Container - Uses Column
 const HeroRight = styled.div`
+/* border: 5px solid yellow; */
 
 min-width:600px;
 margin-right: 5rem;
@@ -104,7 +107,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center ;
 
-border: 5px solid yellow;
+
 @media only screen and (max-width: 890px) {
     /* for mobile decrease min width to center textbox */
     min-width:400px;

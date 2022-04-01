@@ -1,6 +1,6 @@
 import styled from 'styled-components';
-import Navbar from './navbar'
-import Footer from './footer'
+import Navbar from './Navbar'
+import Footer from './Footer'
 
 
 //Flex display is used so the footer will stay at the bottom

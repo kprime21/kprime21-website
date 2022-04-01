@@ -7,7 +7,9 @@ import picture from '../public/k.png'
 
 
 const Menu = styled.div`
-    background-color: darkolivegreen;
+    background-color: black;
+    /* background-color:darkolivegreen;
+    border:5px solid green;  */
     top:0;
     display:flex;
     position:fixed;
@@ -16,7 +18,7 @@ const Menu = styled.div`
     width:100%;
     z-index:100;
 
-    border:5px solid green;
+ 
 `;
 const TextBox = styled.div`
         border: 2px white solid;
@@ -61,7 +63,7 @@ const ImageHolder = styled.div`
     }
     
 `;
-//The navbar that will stay fixed at the top of the screen
+//The Navbar that will stay fixed at the top of the screen
 const Navbar = () => {
     return (
         <Menu>

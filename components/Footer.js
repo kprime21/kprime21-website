@@ -6,10 +6,12 @@ import Prismic from '../public/prismic.svg';
 
 
 const Foot = styled.div`
+/* border: 10px solid blue; */
+
 //must have parent div in a flex box in order to stay at the bottom for pages that are longer than the page width (scrollbar)
 
 position:absolute;
-background-color:navy;
+/* background-color:navy; */
 width:100%;
 margin:auto;
 bottom:0;
@@ -23,7 +25,7 @@ align-items:center;
 
 text-align: center;
 color:white;
-border: 10px solid blue;
+
 
 
 div{

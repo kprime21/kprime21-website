@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import { Container } from '../styles/Home'
-import Hero from '../components/hero'
+import Hero from '../components/Hero'
 import styled from 'styled-components'
 
 import PostList from './projects'
