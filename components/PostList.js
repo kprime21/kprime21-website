@@ -31,8 +31,8 @@ width: 100%;
 const PostCard = styled.div`
 border: 3px white solid; 
 border-radius:5px;
-
-width:50%;
+/* decrease width to increase margin horizontal */
+width:48%; 
 position:relative;
 margin: 1rem 0 2rem 0;
 margin-top:2em;
