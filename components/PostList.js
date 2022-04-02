@@ -39,12 +39,7 @@ margin-top:2em;
 margin-bottom:2em;
 padding:  2rem;
 
-button{
-    background-color:green;
-    color: white;
-    display:inline-block;
-    font-size:16px;
-}
+
 
 h1{
     text-align:center ;
@@ -81,13 +76,27 @@ div{
 `;
 
 const ButtonLink = styled.button`
+/* position:absolute;
+bottom:0;
+background-color:green; */
+
+margin-top:3rem;
+position:relative;
 left: 50%;
+padding: 1rem 2rem;
 /* use to center button perfectly */
  -webkit-transform: translateX(-50%);
  -moz-transform: translateX(-50%);
- transform: translateX(-50%);
-position:absolute;
-bottom:0;
+transform: translateX(-50%);
+color: white;
+background-color:black;
+display:inline-block;
+font-size:1.2rem;
+font-family: 'VT323', monospace;
+font-weight: 300;
+border-radius:35px;
+cursor:pointer;
+
 `;
 
 const PostImageHolder = styled.div`
@@ -138,7 +147,7 @@ const Posts = (props) => {
                             </div>
                             <a href={info.data.ProjectLink} target='_blank' rel="noreferrer">
                                 <ButtonLink>
-                                    OK
+                                    VISIT WEBSITE
                                 </ButtonLink>
                             </a>
                         </PostCard>
@@ -163,7 +172,7 @@ const Posts = (props) => {
                             </div>
                             <Link href={`/blog/${info.uid}`}>
                                 <ButtonLink>
-                                    OK
+                                    READ MORE
                                 </ButtonLink>
                             </Link>
                         </PostCard>

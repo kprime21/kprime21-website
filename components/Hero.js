@@ -197,7 +197,7 @@ const Hero = () => {
             <HeroRight>
                 <HeroTextR>
                     <h1>
-                        I am a Computer Engineering Student and am an avid coder
+                        I'm a Computer Engineering Student and am an avid coder
 
                         <p>
                             I am experienced in C/C++/NextJS/Flask
@@ -205,7 +205,7 @@ const Hero = () => {
 
 
                         <p>
-                            My interests are Game Development, ROM Hacking and Reverse Engineering retro games
+                            My interests include Web Development, Scripting and Reverse Engineering retro games
                         </p>
                     </h1>
 
