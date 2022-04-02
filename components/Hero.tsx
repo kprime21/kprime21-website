@@ -18,7 +18,7 @@ const HeroContainer = styled.div`
     align-items:center;
     
     @media only screen and (max-width: 890px) {
-    
+    flex-direction:row;
     justify-content:center ;
     align-items:center ;
 
