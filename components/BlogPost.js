@@ -7,23 +7,31 @@ import Image from 'next/image';
 //Title | Date
 //Blogpost Content
 const SingleBlogPost = styled.div`
-width:60%;
+/* border: turquoise 5px solid; */
 
+width:60%;
 margin:auto;
 margin-top:8rem;
 margin-bottom:5rem;
 position:relative;
 
-border: turquoise 5px solid;
+
+
+@media only screen and (max-width: 550px) { //phone screens the Blog post will take 100% width
+
+width: 100%;
+}
 
 `;
 //Blog title and the date will be directly under the image
 const BlogTitle = styled.div`
+/* background:navy; */
+
 display:flex;
 flex-direction:column;
 padding: 1.5rem 0 .5rem;
+background-color:#111111;
 
-background:navy;
 z-index:-1;
 
 
@@ -41,22 +49,30 @@ h2{
 `;
 //Wraps the blogpost content 
 const BlogText = styled.div`
+/* background-color:blue ; */
+background-color:#111111;
+
 border: 5px white solid;
 border-radius:5px;
-
 color:white;
-background-color:blue ;
+
 `
 
 //The actual blogpost content
 const Article = styled.div`
+/* border: 5px pink solid; */
+
 position:relative;
 width:80%;
 margin:auto;
-border: 5px pink solid;
 p{
     word-wrap:break-word;
     margin:1.75rem 0;
+}
+
+@media only screen and (max-width: 550px) { //phone screens the Blog post will take 100% width
+
+width: 90%;
 }
 
 
@@ -65,6 +81,7 @@ p{
 const ProjectlistImageHolder = styled.div`
 
 display:flex;
+margin-bottom:1rem;
 
 
 
