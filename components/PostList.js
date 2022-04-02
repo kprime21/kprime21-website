@@ -105,8 +105,18 @@ position:relative;
 
 const ProjectTags = styled.div`
 position:relative;
-border: purple solid 5px;
+left:50%;
+margin-bottom:1rem;
+/* use to center button perfectly */
+
 div{
+    -webkit-transform: translateX(-50%);
+ -moz-transform: translateX(-50%);
+transform: translateX(-50%);
+    width:fit-content;
+    border: purple solid 5px;
+    border-radius:35px;
+    padding:0 2rem;
     text-align:center ;
     color:white;
     font-family: 'VT323', monospace;
