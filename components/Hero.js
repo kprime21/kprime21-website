@@ -197,10 +197,10 @@ const Hero = () => {
             <HeroRight>
                 <HeroTextR>
                     <h1>
-                        I'm a Computer Engineering Student and am an avid coder
+                        I&apos;m a Computer Engineering Student and am an avid coder
 
                         <p>
-                            I am experienced in C/C++/NextJS/Flask
+                            I&apos;m experienced in C/C++/NextJS/Flask
                         </p>
 
 
