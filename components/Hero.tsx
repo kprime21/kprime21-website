@@ -13,7 +13,7 @@ const HeroContainer = styled.div`
     height:100%;
     position:relative;
     display:flex;
-    flex-direction:row;
+    flex-direction:column; //trying out column
     justify-content:space-evenly;
     align-items:center;
     
@@ -197,14 +197,14 @@ const Hero = () => {
             experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
         },
         {
-            what:'I enjoy writing software projects',
-            strengths:'I mainly write in C++, Javascript, and Python',
-            experience:'My projects are usually on web development, game development and automation',
+            what:'I enjoy writing high level software projects',
+            strengths:'I mainly write in Javascript, Java and Python',
+            experience:'My software projects on web development, game development and automation',
         },
         {
-            what:'I\'m a Computer Engineering Student and am an avid coder',
-            strengths:'I\'m experienced in C/C++/NextJS/Flask',
-            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+            what:'I\'m currently learning how to write low level software',
+            strengths:'I\'ve been using Rust/C/C++',
+            experience:'My interests for low level software are in emulator and OS development',
         },
         {
             what:'I\'m a Computer Engineering Student and am an avid coder',
