@@ -105,14 +105,14 @@ position:relative;
 
 const ProjectTags = styled.div`
 position:relative;
-left:50%;
+
 margin-bottom:1rem;
 /* use to center button perfectly */
 
 div{
-    -webkit-transform: translateX(-50%);
- -moz-transform: translateX(-50%);
-transform: translateX(-50%);
+    position:relative;
+    margin:auto;
+
     width:fit-content;
     border: purple solid 5px;
     border-radius:35px;
