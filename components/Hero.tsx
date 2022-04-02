@@ -1,7 +1,9 @@
+import {useState, useEffect} from 'react'
 import styled from 'styled-components';
 import Kirjan from '../public/kirjan.jpg';
 import Icon1 from '../public/k.png';
 import Image from 'next/image';
+import React from 'react';
 
 // Outer container
 const HeroContainer = styled.div`
@@ -177,8 +179,65 @@ const HoldIcon = styled.div`
 `;
 
 
+
 //Home page where my picture and some about me text is
 const Hero = () => {
+
+    //Setup About Me
+    interface Mumble{
+        what: string;
+        strengths: string;
+        experience: string;
+    };
+    
+    let Biography: Mumble[] = [
+        {
+            what:'I\'m a Computer Engineering Student and am an avid coder',
+            strengths:'I\'m experienced in C/C++/NextJS/Flask',
+            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+        },
+        {
+            what:'I enjoy writing software projects',
+            strengths:'I mainly write in C++, Javascript, and Python',
+            experience:'My projects are usually on web development, game development and automation',
+        },
+        {
+            what:'I\'m a Computer Engineering Student and am an avid coder',
+            strengths:'I\'m experienced in C/C++/NextJS/Flask',
+            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+        },
+        {
+            what:'I\'m a Computer Engineering Student and am an avid coder',
+            strengths:'I\'m experienced in C/C++/NextJS/Flask',
+            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+        },]
+
+    const [value, setValue] = React.useState(Biography[0]);
+    
+    const ChangeHeroText = event => {
+        switch(event.target.alt){
+            case 'icon1':
+                setValue(Biography[0]);
+                break;
+            case 'icon2':
+                setValue(Biography[1]);
+                break;
+            case 'icon3':
+                setValue(Biography[2]);
+                break;
+            case 'icon4':
+                setValue(Biography[3]);
+                break;
+            default:
+                break;
+    }
+    };
+
+    
+
+
+
+    
     return (
         <HeroContainer>
             <HeroLeft>
@@ -197,31 +256,31 @@ const Hero = () => {
             <HeroRight>
                 <HeroTextR>
                     <h1>
-                        I&apos;m a Computer Engineering Student and am an avid coder
+                        {value.what}
 
                         <p>
-                            I&apos;m experienced in C/C++/NextJS/Flask
+                            {value.strengths}
                         </p>
 
 
                         <p>
-                            My interests include Web Development, Scripting and Reverse Engineering retro games
+                            {value.experience}
                         </p>
                     </h1>
 
 
                 </HeroTextR>
                 <HeroIconPicture>
-                    <HoldIcon>
+                    <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon1'></Image>
                     </HoldIcon>
-                    <HoldIcon>
+                    <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon2'></Image>
                     </HoldIcon>
-                    <HoldIcon>
+                    <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon3'></Image>
                     </HoldIcon>
-                    <HoldIcon>
+                    <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon4'></Image>
                     </HoldIcon>
 

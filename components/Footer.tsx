@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import Image from 'next/image';
 import Github from '../public/github.gif';
-import Prismic from '../public/prismic.svg';
+
 
 
 
