@@ -1,5 +1,9 @@
 import styled from 'styled-components';
 import Image from 'next/image';
+import { RichText } from 'prismic-reactjs'
+import ReactMarkdown from 'react-markdown';
+
+
 
 
 //Set the area for the blogpost to be 60% of the screen and centered
@@ -70,6 +74,7 @@ p{
     margin:1.75rem 0;
 }
 
+
 @media only screen and (max-width: 550px) { //phone screens the Blog post will take 100% width
 
 width: 90%;
@@ -102,6 +107,7 @@ margin-bottom:1rem;
 //Holds blogpost that will be on a static page [slug]
 const BlogPost = (props) => {
     let {article} = props
+    const rawMarkdown = RichText.asText(article.data.BlogContent)
     return (
         <SingleBlogPost key = {article.uid}>
 
@@ -115,8 +121,8 @@ const BlogPost = (props) => {
                 </BlogTitle>
                 <Article>
                     <p>
-                        {article.data.BlogContent[0].text}
-                    </p>
+                   <ReactMarkdown children={rawMarkdown}></ReactMarkdown>
+                   </p>
                 </Article>
             </BlogText>
         </SingleBlogPost>
