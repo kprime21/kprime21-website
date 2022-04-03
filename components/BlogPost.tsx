@@ -121,7 +121,9 @@ const BlogPost = (props) => {
                 </BlogTitle>
                 <Article>
                     <p>
-                   <ReactMarkdown children={rawMarkdown}></ReactMarkdown>
+                   <ReactMarkdown>
+                       {rawMarkdown}
+                   </ReactMarkdown>
                    </p>
                 </Article>
             </BlogText>
