@@ -10,7 +10,7 @@
       },
       "BlogContent": {
         "config": {
-          "patternType": "STORY",
+          "patternType": "PARAGRAPH",
           "blocks": 1
         }
       }

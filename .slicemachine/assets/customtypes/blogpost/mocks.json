@@ -1,6 +1,6 @@
 {
-  "id": "dc85aab4-c80f-4949-bdb3-8fadbb0fcd84",
-  "uid": "non-cum-et",
+  "id": "c63449eb-b261-4799-953c-08d0fa286e84",
+  "uid": "deserunt-saepe-ut",
   "type": "blogpost",
   "data": {
     "BlogImage": {
@@ -10,36 +10,21 @@
       },
       "alt": "Placeholder image",
       "copyright": null,
-      "url": "https://images.unsplash.com/photo-1547394765-185e1e68f34e?w=900&h=500&fit=crop"
+      "url": "https://images.unsplash.com/photo-1571126770897-2d612d1f7b89?w=900&h=500&fit=crop"
     },
-    "BlogTitle": "harness viral initiatives",
-    "BlogDate": "2015-04-20",
+    "BlogTitle": "transition frictionless infrastructures",
+    "BlogDate": "2018-11-29",
     "BlogPreview": [
       {
         "type": "paragraph",
-        "text": "Eiusmod veniam voluptate sint veniam occaecat non esse nostrud eu anim anim aute. Fugiat ipsum ea cupidatat sunt officia enim officia commodo Lorem ad deserunt eiusmod reprehenderit.",
+        "text": "Laborum nostrud sunt tempor exercitation culpa in aliqua Lorem culpa sit qui commodo.",
         "spans": []
       }
     ],
     "BlogContent": [
       {
-        "type": "heading1",
-        "text": "Generate integrated experiences",
-        "spans": []
-      },
-      {
-        "type": "image",
-        "dimensions": {
-          "width": 900,
-          "height": 500
-        },
-        "alt": "Placeholder image",
-        "copyright": null,
-        "url": "https://images.unsplash.com/photo-1515378960530-7c0da6231fb1?w=900&h=500&fit=crop"
-      },
-      {
         "type": "paragraph",
-        "text": "Pariatur nostrud nostrud esse aliqua duis ex velit voluptate amet do excepteur enim ut do fugiat.",
+        "text": "Aute quis dolor sunt commodo quis laboris nulla ut.",
         "spans": []
       }
     ]
