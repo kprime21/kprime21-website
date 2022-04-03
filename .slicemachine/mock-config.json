@@ -7,6 +7,12 @@
           "patternType": "PARAGRAPH",
           "blocks": 1
         }
+      },
+      "BlogContent": {
+        "config": {
+          "patternType": "STORY",
+          "blocks": 1
+        }
       }
     }
   }

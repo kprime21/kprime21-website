@@ -1,9 +1,12 @@
 import {useState, useEffect} from 'react'
+import React from 'react';
 import styled from 'styled-components';
+import Image from 'next/image';
 import Kirjan from '../public/kirjan.jpg';
 import Icon1 from '../public/k.png';
-import Image from 'next/image';
-import React from 'react';
+import Note from '../public/test.png';
+import Computer from '../public/computer.png';
+
 
 // Outer container
 const HeroContainer = styled.div`
@@ -275,10 +278,10 @@ const Hero = () => {
                         <Image src={Icon1} alt='icon1'></Image>
                     </HoldIcon>
                     <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Icon1} alt='icon2'></Image>
+                        <Image src={Note} alt='icon2'></Image>
                     </HoldIcon>
                     <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Icon1} alt='icon3'></Image>
+                        <Image src={Computer} alt='icon3'></Image>
                     </HoldIcon>
                     <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon4'></Image>
