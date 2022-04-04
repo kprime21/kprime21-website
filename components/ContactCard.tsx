@@ -3,12 +3,14 @@ import styled from 'styled-components';
 
 const ContactCard = styled.form`
 position:relative;
+font-family: "VT323", monospace;
+font-size: 20px;
+font-weight:900;
 border: 5px white solid;
 border-radius: 5px;
 color:white;
 margin:auto;
-margin-top:15rem;
-
+margin-top:8rem;
 max-width:600px;
 padding: 15px;
 line-height:2rem;
@@ -31,13 +33,17 @@ textarea{
     font-size: 14px;
 }
 #submit-button{
+    cursor:pointer;
+    font-size: 24px;
+    font-family: 'VT323', monospace;
     margin-top: 10px;
     width: 100%;
     padding-top: 10px;
     padding-bottom: 10px;
     color: #fff;
-    background-color: blue;
-    border:none;
+    background-color: #000;
+    border:5px white solid;  
+    border-radius:5px;
 }
 `
 

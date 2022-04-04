@@ -4,8 +4,10 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import Kirjan from '../public/kirjan.jpg';
 import Icon1 from '../public/k.png';
-import Note from '../public/test.png';
+import Note from '../public/about.png';
 import Computer from '../public/computer.png';
+import CV from '../public/CV.png';
+
 
 
 // Outer container
@@ -228,9 +230,6 @@ const Hero = () => {
             case 'icon3':
                 setValue(Biography[2]);
                 break;
-            case 'icon4':
-                setValue(Biography[3]);
-                break;
             default:
                 break;
     }
@@ -283,9 +282,11 @@ const Hero = () => {
                     <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Computer} alt='icon3'></Image>
                     </HoldIcon>
-                    <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Icon1} alt='icon4'></Image>
+                    <a href="/doc/Resume_KK.pdf" target="_blank" rel="noreferrer">
+                    <HoldIcon>
+                        <Image src={CV} alt='icon4'></Image>
                     </HoldIcon>
+                    </a>
 
                 </HeroIconPicture>
 
