@@ -282,7 +282,7 @@ const Hero = () => {
                     <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Computer} alt='icon3'></Image>
                     </HoldIcon>
-                    <a href="/doc/Resume_KK.pdf" target="_blank" rel="noreferrer">
+                    <a href="https://kprime21.github.io/" target="_blank" rel="noreferrer">
                     <HoldIcon>
                         <Image src={CV} alt='icon4'></Image>
                     </HoldIcon>
