@@ -198,23 +198,23 @@ const Hero = () => {
     let Biography: Mumble[] = [
         {
             what:'I\'m a Computer Engineering Student and am an avid coder',
-            strengths:'I\'m experienced in C/C++/NextJS/Flask',
-            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+            strengths:'I\'m experienced in Javascript/Python/C++',
+            experience:'I am currently writing a playlist builder with a NextJS front-end and Django back-end',
         },
         {
             what:'I enjoy writing high level software projects',
-            strengths:'I mainly write in Javascript, Java and Python',
-            experience:'My software projects on web development, game development and automation',
+            strengths:'I mainly write them in Javascript, Java and Python',
+            experience:'My software projects are available on my GitHub page',
         },
         {
             what:'I\'m currently learning how to write low level software',
-            strengths:'I\'ve been using Rust/C/C++',
+            strengths:'I\'ve been learning to use Rust/C/C++ for them',
             experience:'My interests for low level software are in emulator and OS development',
         },
         {
             what:'I\'m a Computer Engineering Student and am an avid coder',
-            strengths:'I\'m experienced in C/C++/NextJS/Flask',
-            experience:'My interests include Cyber Security, ROM Hacking and Reverse Engineering',
+            strengths:'I\'m experienced in Javascript/Python/C++',
+            experience:'I am currently writing a playlist builder with a NextJS front-end and Django back-end',
         },]
 
     const [value, setValue] = React.useState(Biography[0]);
