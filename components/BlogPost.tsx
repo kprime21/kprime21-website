@@ -13,11 +13,15 @@ import ReactMarkdown from 'react-markdown';
 const SingleBlogPost = styled.div`
 /* border: turquoise 5px solid; */
 
+max-width:1920px;
 width:60%;
 margin:auto;
 margin-top:8rem;
 margin-bottom:5rem;
 position:relative;
+display:flex;
+flex-direction:column;
+align-items:center;
 
 
 
@@ -55,6 +59,7 @@ h2{
 const BlogText = styled.div`
 /* background-color:blue ; */
 background-color:#111111;
+
 
 border: 5px white solid;
 border-radius:5px;
