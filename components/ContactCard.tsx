@@ -5,15 +5,18 @@ const ContactCard = styled.form`
 position:relative;
 font-size: 20px;
 font-weight:900;
-border: 5px white solid;
-border-radius: 5px;
+/* border: 5px white solid;
+border-radius: 5px; */
 color:white;
 margin:auto;
 margin-top:8rem;
 max-width:600px;
 padding: 15px;
+padding-bottom:2rem;
 line-height:2rem;
 text-align:center;
+background-color:#333333;
+border-radius:20px;
 
 label{
     line-height: 2.7em;
@@ -23,25 +26,30 @@ textarea{
     font-size: 14px;
 }
 .input-field{
+    font-family: Circular, sans-serif;
+    font-weight:400;
+    text-align:center;
     width:100%;
     padding-top:10px;
     padding-bottom:10px;
+    color:black;
     background-color: white;
     border-radius: 5px;
     border:1px solid var(--borderColor);
     font-size: 14px;
+    
 }
 #submit-button{
     cursor:pointer;
     font-size: 24px;
-    margin-top: 10px;
-    width: 100%;
+    margin-top: 20px;
+    width: 50%;
     padding-top: 10px;
     padding-bottom: 10px;
     color: #fff;
-    background-color: #000;
-    border:5px white solid;  
-    border-radius:5px;
+    background-color: #0E2A47;
+    border:5px #0E2A47 solid;   
+    border-radius:35px; 
 }
 `
 

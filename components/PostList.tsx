@@ -89,6 +89,7 @@ padding: 1rem 2rem;
 transform: translateX(-50%);
 color: white;
 background-color:#16407B;
+border: 5px solid #16407b;
 display:inline-block;
 font-size:1.2rem;
 border-radius:35px;

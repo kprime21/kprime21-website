@@ -111,7 +111,7 @@ const Hero = () => {
                     <Image className='image' src={Kirjan} layout="fill" alt='MyPicture'/>
                 </HeroImagePicture>
             <h1>
-                Hi, I'm Kirjan
+                Hi, I'&apos;m Kirjan
             </h1>
             <Link  href='/projects' passHref>
                     <div className='projects'>Projects</div>
