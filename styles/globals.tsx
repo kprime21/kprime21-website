@@ -1,5 +1,4 @@
 import { createGlobalStyle } from "styled-components";
-import Background from '../public/public/svg/wave.svg'
 
 
 

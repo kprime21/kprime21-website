@@ -29,7 +29,8 @@ width: 100%;
 //Post Description
 //Button to go to Post Page
 const PostCard = styled.div`
-border: 3px white solid; 
+background-color: #16407B;
+
 border-radius:5px;
 /* decrease width to increase margin horizontal */
 width:48%; 
