@@ -98,6 +98,9 @@ cursor:pointer;
 
 const PostImageHolder = styled.div`
 position:relative;
+.image{
+    border-radius: 10px;
+}
 `;
 
 const ProjectTags = styled.div`
@@ -117,6 +120,8 @@ div{
     text-align:center ;
     color:white;
 }
+
+
 `;
 
 

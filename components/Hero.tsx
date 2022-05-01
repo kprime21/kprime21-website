@@ -142,7 +142,7 @@ h1{
     color:white;
     font-size: 2em;
     margin: 0 auto 1rem auto;
-    text-align:left; 
+    text-align:center; 
     padding: 1rem 1rem;
 
 
@@ -196,9 +196,9 @@ const Hero = () => {
     
     let Biography: Mumble[] = [
         {
-            what:'I\'m a Computer Engineering Student and am an avid coder',
-            strengths:'I\'m experienced in Javascript/Python/C++',
-            experience:'I am currently writing a playlist builder with a NextJS front-end and Django back-end',
+            what:'I\'m a Computer Engineering Student at the University of Ottawa',
+            strengths:'I\'m experienced in Typescript/Python/C++',
+            experience:'I mainly use React and Django',
         },
         {
             what:'I enjoy writing high level software projects',
