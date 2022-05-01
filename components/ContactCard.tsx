@@ -3,7 +3,6 @@ import styled from 'styled-components';
 
 const ContactCard = styled.form`
 position:relative;
-font-family: "VT323", monospace;
 font-size: 20px;
 font-weight:900;
 border: 5px white solid;
@@ -35,7 +34,6 @@ textarea{
 #submit-button{
     cursor:pointer;
     font-size: 24px;
-    font-family: 'VT323', monospace;
     margin-top: 10px;
     width: 100%;
     padding-top: 10px;

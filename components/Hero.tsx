@@ -65,6 +65,7 @@ border: 3px solid white;
 border-radius: 5px;
 width: 20%;
 min-width:300px;
+margin-bottom:1em;
 
 
 
@@ -91,7 +92,6 @@ position:relative;
      
     border: 3px solid white;
     border-radius: 5px;
-    font-family: 'VT323', monospace;
     font-weight:500;
     color:white;
     font-size: 2em;
@@ -138,7 +138,6 @@ h1{
     
     border: 3px solid white;
     border-radius: 10px;
-    font-family: 'VT323', monospace;
     font-weight:500;
     color:white;
     font-size: 2em;
@@ -247,13 +246,13 @@ const Hero = () => {
                     <Image className='image' src={Kirjan} layout="fill" alt='MyPicture'/>
                 </HeroImagePicture>
 
-                <HeroTextL>
+                {/* <HeroTextL>
                     <h1>
                         Hi! My name is Kirjan
 
                     </h1>
 
-                </HeroTextL>
+                </HeroTextL> */}
             </HeroLeft>
             <HeroRight>
                 <HeroTextR>
@@ -272,7 +271,7 @@ const Hero = () => {
 
 
                 </HeroTextR>
-                <HeroIconPicture>
+                {/* <HeroIconPicture>
                     <HoldIcon onClick={ChangeHeroText}>
                         <Image src={Icon1} alt='icon1'></Image>
                     </HoldIcon>
@@ -288,7 +287,7 @@ const Hero = () => {
                     </HoldIcon>
                     </a>
 
-                </HeroIconPicture>
+                </HeroIconPicture> */}
 
             </HeroRight>
 

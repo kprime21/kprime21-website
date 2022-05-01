@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import "@fontsource/vt323";
 import Link from 'next/link';
 import Image from 'next/image';
 import picture from '../public/k.png'
@@ -29,7 +28,6 @@ const TextBox = styled.div`
         padding: 1rem 1.5rem 1rem;
         div{
         color:#fff;
-        font-family: 'VT323', monospace;
         font-size: 22px;
         font-weight: bold;
         padding: 0 2rem;

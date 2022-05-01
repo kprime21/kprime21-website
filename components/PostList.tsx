@@ -31,7 +31,7 @@ width: 100%;
 const PostCard = styled.div`
 background-color: #16407B;
 
-border-radius:5px;
+border-radius:8px;
 /* decrease width to increase margin horizontal */
 width:48%; 
 position:relative;
@@ -45,12 +45,10 @@ padding:  2rem;
 h1{
     text-align:center ;
     color:white;
-    font-family: 'VT323', monospace;
 
 }
 div{
     color:white;  
-    font-family: 'VT323', monospace;
     font-size: 22px;
     font-weight: bold;
 }
@@ -90,11 +88,9 @@ padding: 1rem 2rem;
  -moz-transform: translateX(-50%);
 transform: translateX(-50%);
 color: white;
-background-color:black;
+background-color:#16407B;
 display:inline-block;
 font-size:1.2rem;
-font-family: 'VT323', monospace;
-font-weight: 300;
 border-radius:35px;
 cursor:pointer;
 
@@ -120,7 +116,6 @@ div{
     padding:0 2rem;
     text-align:center ;
     color:white;
-    font-family: 'VT323', monospace;
 }
 `;
 

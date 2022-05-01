@@ -31,7 +31,6 @@ color:white;
 
 
 div{
-    font-family: 'VT323', monospace;
     color:white;
 }
    
