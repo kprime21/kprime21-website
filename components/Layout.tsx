@@ -11,6 +11,7 @@ min-height:100vh;
 padding: 0 0 10rem;
 position:relative;
 
+
 `;
 //The layout template that will be reused 
 export default function Layout({ children }) {

@@ -31,6 +31,7 @@ color:white;
 
 
 div{
+    font-size:14px;
     color:white;
 }
    
@@ -38,8 +39,8 @@ div{
 `;
 
 const IconHolder = styled.div`
-border:2px solid white;
-border-radius: 5px;
+/* border:2px solid white;
+border-radius: 5px; */
 display:flex;
 margin-bottom:5px;
 padding: 0.5rem 0 0 0;
@@ -50,8 +51,8 @@ padding: 0.5rem 0 0 0;
 
 const HoldImage = styled.div`
 margin:0 0.5rem 0 0.5rem;
-width:32px;
-height:32px;
+width:36px;
+height:36px;
 
 
 
@@ -86,7 +87,7 @@ const Footer = () => {
             </IconHolder>
             
             <div>© 2022 Kirjan Kohuladas, Powered by Next.js, Prismic, & Vercel</div>
-            <hr></hr>
+            
             
         </Foot>
 

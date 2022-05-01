@@ -1,5 +1,6 @@
 import {useState, useEffect} from 'react'
 import React from 'react';
+import Link from 'next/link';
 import styled from 'styled-components';
 import Image from 'next/image';
 import Kirjan from '../public/kirjan.jpg';
@@ -13,20 +14,17 @@ import CV from '../public/CV.png';
 // Outer container
 const HeroContainer = styled.div`
     margin:auto;
-    margin-top:10rem;
     width:80%;
     height:100%;
     position:relative;
     display:flex;
-    flex-direction:column; //trying out column
-    justify-content:space-evenly;
+    flex-direction:column; 
+    justify-content:flex-start;
     align-items:center;
+    margin-top:10rem;
+    
     
     @media only screen and (max-width: 890px) {
-    flex-direction:row;
-    justify-content:center ;
-    align-items:center ;
-
     flex-wrap: wrap;
  
 
@@ -35,37 +33,50 @@ const HeroContainer = styled.div`
 `;
 
 //Left Container - Uses Column
-const HeroLeft = styled.div`
+const HeroTop = styled.div`
 /* border: 5px solid yellow; */
-
-width:20%;
-min-width:400px;
-margin-right: 5rem;
-margin:auto;
 display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center ;
+color: white;
+/* #1db954; */
 
 
 @media only screen and (max-width: 890px) {
-    
-    margin-right:0;
-    margin-left:0;
+    margin:0;
 
 }
 
+h1{
+    width: 100%;
+    font-size: 4em;
+    text-align: center;
+}
 
+.projects{
+    font-family:Circular, sans-serif;
+    font-size:24px;
+    color:white;
+    background-color:#1db954;    
+    padding: 15px 50px;
+    text-transform: uppercase;
+    border-radius: 35px;
+    box-shadow: 0 0 1px 0;
+    cursor: pointer;
+
+}
 `;
 
 //Top Container of Column
 const HeroImagePicture = styled.div`
 position:relative;
-border: 3px solid white;
-border-radius: 5px;
-width: 20%;
-min-width:300px;
-margin-bottom:1em;
+border: 3px solid #1db954;
+border-radius: 50%;
+width: 65%;
+min-width:150px;
+
+
 
 
 
@@ -74,6 +85,7 @@ margin-bottom:1em;
 }
 
 .image {
+    border-radius:50%;
     object-fit: contain;
     width: 100% !important;
     position: relative !important;
@@ -82,214 +94,30 @@ margin-bottom:1em;
 
 
 `;
-//Bottom Container of Column
-const HeroTextL = styled.div`
-padding: 2em 2em;
-position:relative;
 
-
- h1{
-     
-    border: 3px solid white;
-    border-radius: 5px;
-    font-weight:500;
-    color:white;
-    font-size: 2em;
-    margin: 0 auto 1rem auto;
-    padding: 1rem 1rem;
- }
-
-`;
-
-
-//Right Container - Uses Column
-const HeroRight = styled.div`
-/* border: 5px solid yellow; */
-
-min-width:600px;
-margin-right: 5rem;
-margin:auto;
-display:flex;
-flex-direction: column;
-justify-content: center;
-align-items: center ;
-
-
-@media only screen and (max-width: 890px) {
-    /* for mobile decrease min width to center textbox */
-    min-width:400px;
-    margin-right:0;
-    margin-left:0;
-
-}
-`;
-
-//Text container of right column
-const HeroTextR = styled.div`
-padding: 0 5em;
-position:relative;
-margin-bottom:auto;
-
-
-
-
-
-h1{
-    
-    border: 3px solid white;
-    border-radius: 10px;
-    font-weight:500;
-    color:white;
-    font-size: 2em;
-    margin: 0 auto 1rem auto;
-    text-align:center; 
-    padding: 1rem 1rem;
-
-
-    width:100%;
-    
-    
-}
-@media only screen and (max-width: 890px) {
-    
-    padding: 0 2em;
-
-}
-`;
-
-//Image container of right column
-const HeroIconPicture = styled.div`
-
-    margin-top:3rem;
-
-    display:flex;
-    flex-direction:row ;
-    justify-content:center;
-    
-    
-
-    
-    border: 5px solid white;
-    border-radius: 5px;
-`;
-
-//Container for each seperate icon
-const HoldIcon = styled.div`
-    height:64px;
-    width:64px;
-    margin-left:1rem;
-    margin-right:1rem;
-    cursor:pointer;
-`;
 
 
 
 //Home page where my picture and some about me text is
 const Hero = () => {
 
-    //Setup About Me
-    interface Mumble{
-        what: string;
-        strengths: string;
-        experience: string;
-    };
-    
-    let Biography: Mumble[] = [
-        {
-            what:'I\'m a Computer Engineering Student at the University of Ottawa',
-            strengths:'I\'m experienced in Typescript/Python/C++',
-            experience:'I mainly use React and Django',
-        },
-        {
-            what:'I enjoy writing high level software projects',
-            strengths:'I mainly write them in Javascript, Java and Python',
-            experience:'My software projects are available on my GitHub page',
-        },
-        {
-            what:'I\'m currently learning how to write low level software',
-            strengths:'I\'ve been learning to use Rust/C/C++ for them',
-            experience:'My interests for low level software are in emulator and OS development',
-        },
-        {
-            what:'I\'m a Computer Engineering Student and am an avid coder',
-            strengths:'I\'m experienced in Javascript/Python/C++',
-            experience:'I am currently writing a playlist builder with a NextJS front-end and Django back-end',
-        },]
-
-    const [value, setValue] = React.useState(Biography[0]);
-    
-    const ChangeHeroText = event => {
-        switch(event.target.alt){
-            case 'icon1':
-                setValue(Biography[0]);
-                break;
-            case 'icon2':
-                setValue(Biography[1]);
-                break;
-            case 'icon3':
-                setValue(Biography[2]);
-                break;
-            default:
-                break;
-    }
-    };
-
-    
-
-
+  
 
     
     return (
         <HeroContainer>
-            <HeroLeft>
+            <HeroTop>
                 <HeroImagePicture>
                     <Image className='image' src={Kirjan} layout="fill" alt='MyPicture'/>
                 </HeroImagePicture>
-
-                {/* <HeroTextL>
-                    <h1>
-                        Hi! My name is Kirjan
-
-                    </h1>
-
-                </HeroTextL> */}
-            </HeroLeft>
-            <HeroRight>
-                <HeroTextR>
-                    <h1>
-                        {value.what}
-
-                        <p>
-                            {value.strengths}
-                        </p>
-
-
-                        <p>
-                            {value.experience}
-                        </p>
-                    </h1>
-
-
-                </HeroTextR>
-                {/* <HeroIconPicture>
-                    <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Icon1} alt='icon1'></Image>
-                    </HoldIcon>
-                    <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Note} alt='icon2'></Image>
-                    </HoldIcon>
-                    <HoldIcon onClick={ChangeHeroText}>
-                        <Image src={Computer} alt='icon3'></Image>
-                    </HoldIcon>
-                    <a href="https://kprime21.github.io/" target="_blank" rel="noreferrer">
-                    <HoldIcon>
-                        <Image src={CV} alt='icon4'></Image>
-                    </HoldIcon>
-                    </a>
-
-                </HeroIconPicture> */}
-
-            </HeroRight>
+            <h1>
+                Hi, I'm Kirjan
+            </h1>
+            <Link  href='/projects' passHref>
+                    <div className='projects'>Projects</div>
+            </Link>
+            </HeroTop>
+         
 
 
         </HeroContainer>

@@ -6,12 +6,12 @@ import picture from '../public/k.png'
 
 
 const Menu = styled.div`
-    background-color: #0E2647;
-    /* background-color:darkolivegreen;
-    border:5px solid green;  */
+    background-color:#0E2A47;
+    /* border:5px solid green;   */
     top:0;
     display:flex;
     position:fixed;
+    box-shadow: 0 0 5px 0;
     justify-content:space-around;
     align-items:center;
     width:100%;
@@ -20,8 +20,8 @@ const Menu = styled.div`
  
 `;
 const TextBox = styled.div`
-        border: 2px white solid;
-        border-radius:5px;
+        /* border: 2px white solid;
+        border-radius:5px; */
         display:flex;
         margin-top:1rem;
         margin-bottom:1rem;
