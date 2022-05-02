@@ -29,8 +29,7 @@ width: 100%;
 //Post Description
 //Button to go to Post Page
 const PostCard = styled.div`
-background-color: #333333;
-
+background-color: #1db954;;
 border-radius:8px;
 /* decrease width to increase margin horizontal */
 width:48%; 
@@ -38,7 +37,7 @@ position:relative;
 margin: 1rem 0 2rem 0;
 margin-top:2em;
 margin-bottom:2em;
-padding:  2rem;
+padding:  1.5rem;
 
 
 
@@ -49,7 +48,7 @@ h1{
 }
 div{
     color:white;  
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
 }
 @media only screen and (max-width: 1500px) {
