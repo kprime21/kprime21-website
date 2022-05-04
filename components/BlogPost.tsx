@@ -59,8 +59,7 @@ h2{
 const BlogText = styled.div`
 /* background-color:blue ; */
 background-color:#111111;
-
-
+width:100%;
 border: 5px white solid;
 border-radius:5px;
 color:white;
