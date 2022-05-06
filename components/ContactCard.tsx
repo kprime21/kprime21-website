@@ -5,11 +5,12 @@ const ContactCard = styled.form`
 position:relative;
 font-size: 20px;
 font-weight:900;
+top:5vh;
 /* border: 5px white solid;
 border-radius: 5px; */
 color:white;
 margin:auto;
-margin-top:8rem;
+margin-top:6rem;
 max-width:600px;
 padding: 15px;
 padding-bottom:2rem;

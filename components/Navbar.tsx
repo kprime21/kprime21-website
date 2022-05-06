@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Link from "next/link";
 import Image from "next/image";
 import picture from "../public/k.png";
-import {useRouter} from "next/router";
+import { useRouter } from "next/router";
 import { resolveHref } from "next/dist/shared/lib/router/router";
 
 const Menu = styled.div`
@@ -78,21 +78,21 @@ const ImageHolder = styled.div`
 
 const LinkBar = ({ current }) => {
     const HighlightBorder = (event) => {
-        console.log(
-            (event.target.parentNode.style["border-bottom-color"] = "white")
-        );
+
+        (event.target.parentNode.style["border-bottom-color"] = "white")
+
     };
 
     const deHighlightBorder = (event) => {
-        console.log(
-            (event.target.parentNode.style["border-bottom-color"] = "transparent")
-        );
+
+        (event.target.parentNode.style["border-bottom-color"] = "transparent")
+
     };
-    
+
     return (
         <>
             <Link href="/" passHref>
-                
+
                 {current == '/' ? (
                     <a style={{ borderBottom: "white solid 3px" }}>
                         <TextNav>Home</TextNav>
@@ -161,17 +161,16 @@ const LinkBar = ({ current }) => {
 };
 const Navbar = (stuff) => {
     const router = useRouter()
-    console.log(router.pathname)
-  
 
 
-    
+
+
 
     return (
         <Menu>
-            <Link href="/">
+            <Link href="/" passHref>
                 <ImageHolder>
-                    <Image src={picture}></Image>
+                    <Image src={picture} alt=''></Image>
                 </ImageHolder>
             </Link>
 
