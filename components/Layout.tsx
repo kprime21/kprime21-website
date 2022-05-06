@@ -18,7 +18,7 @@ export default function Layout({ children }) {
     return (
         <>
             <LayoutHolder>
-                <Navbar />
+                <Navbar stuff={children} />
                 <main>{children}</main>
                 <Footer />
             </LayoutHolder>
