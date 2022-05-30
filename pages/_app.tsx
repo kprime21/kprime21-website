@@ -8,7 +8,7 @@ function MyApp({ Component, pageProps, router }) {
     <>
       <GlobalStyles />
       <Layout>
-        <AnimatePresence>
+        <AnimatePresence exitBeforeEnter>
           <Component {...pageProps} />
         </AnimatePresence>
       </Layout>
