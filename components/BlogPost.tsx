@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import Image from 'next/image';
 import { RichText } from 'prismic-reactjs'
 import ReactMarkdown from 'react-markdown';
+import { motion } from 'framer-motion'
 
 
 
@@ -113,6 +114,11 @@ const BlogPost = (props) => {
     let {article} = props
     const rawMarkdown = RichText.asText(article.data.BlogContent)
     return (
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+      >
         <SingleBlogPost key = {article.uid}>
 
             <ProjectlistImageHolder>
@@ -132,6 +138,7 @@ const BlogPost = (props) => {
                 </Article>
             </BlogText>
         </SingleBlogPost>
+        </motion.div>
     );
 }
 
