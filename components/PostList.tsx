@@ -126,7 +126,7 @@ const Posts = (props) => {
   return (
     <PostList>
       {type == "project"
-        ? post.reverse().map((info) => {
+        ? post.map((info) => {
             return (
               <PostCard key={info.uid}>
                 <PostImageHolder>

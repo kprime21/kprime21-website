@@ -7,7 +7,7 @@ import {motion} from 'framer-motion'
 export async function getStaticProps({ProjectPost}){
   const client = createClient({ProjectPost})
 
-  const page = await client.getAllByType('projectpost')
+  const page = await (await client.getAllByType('projectpost')).reverse()
 
   return{
     props: {page},
