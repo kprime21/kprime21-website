@@ -16,7 +16,7 @@ let BlogInfo = {
 export async function getStaticProps({BlogPost}){
   const client = createClient({BlogPost})
 
-  const page = await client.getAllByType('blogpost')
+  const page = await (await client.getAllByType('blogpost')).reverse()
 
   return{
     props: {page},
