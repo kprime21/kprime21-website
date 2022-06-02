@@ -105,19 +105,20 @@ position:relative;
 
 const ProjectTags = styled.div`
 position:relative;
-
+text-align:center ;
 margin-bottom:1rem;
 /* use to center button perfectly */
 
-div{
+p{
+    font-size:14px;
+    display: inline;
     position:relative;
-    margin:auto;
-
+    margin:5px 5px 5px 5px;
     width:fit-content;
-    border: purple solid 5px;
+    background-color: purple;
     border-radius:35px;
-    padding:0 2rem;
-    text-align:center ;
+    padding:0 5px;
+    
     color:white;
 }
 
@@ -136,7 +137,7 @@ const Posts = (props) => {
 
             {(type == 'project') ?
                 post.map(info => {
-                    // console.log(info)
+                    console.log(info.data.ProjectTags[0].text)
                     return (
 
                         <PostCard key={info.uid} >
@@ -149,9 +150,11 @@ const Posts = (props) => {
                                 {info.data.ProjectTitle}
                             </h1>
                             <ProjectTags>
-                                <div>
-                                    {info.data.ProjectTags[0].text}
-                                </div>
+                                    {info.data.ProjectTags[0].text.split(',').map(items=> {
+                                        return(
+                                            <p>{items}</p>
+                                        )
+                                    })}
                             </ProjectTags>
                             <div>
                                 {info.data.ProjectInfo[0].text}
