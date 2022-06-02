@@ -88,12 +88,20 @@ padding: 1rem 2rem;
 transform: translateX(-50%);
 color: white;
 background-color:#16407B;
-border: 5px solid #16407b;
+border: 5px solid #16407B;
 display:inline-block;
 font-size:1.2rem;
 border-radius:35px;
 cursor:pointer;
+&:hover  {
+  background-color: #1752a5;
+  border-color: #1752a5;
+  transition: background-color .30s ease,color .30s ease
+  }
+`;
 
+const Wrapper = styled.div`
+  
 `;
 
 const PostImageHolder = styled.div`
