@@ -137,7 +137,7 @@ const Posts = (props) => {
 
             {(type == 'project') ?
                 post.map(info => {
-                    console.log(info.data.ProjectTags[0].text)
+                    
                     return (
 
                         <PostCard key={info.uid} >
@@ -151,8 +151,9 @@ const Posts = (props) => {
                             </h1>
                             <ProjectTags>
                                     {info.data.ProjectTags[0].text.split(',').map(items=> {
+                                        
                                         return(
-                                            <p>{items}</p>
+                                            <p key ={items+info.data.ProjectTitle}>{items}</p>
                                         )
                                     })}
                             </ProjectTags>
